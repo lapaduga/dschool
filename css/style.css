@@ -204,14 +204,17 @@ h6 {
 
 .school-button {
   padding: 20px 48px;
-  background: -webkit-gradient(linear, left top, right top, from(#a22cea), to(#7000ff));
-  background: linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
   border-radius: 50px;
   color: #fff;
+  background: #a22cea;
+  background: -webkit-gradient(linear, left top, right top, from(#a22cea), to(#7000ff));
+  background: linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a22cea', endColorstr='#7000ff',GradientType=1 );
 }
 
 .test {
   font-size: 26px;
+  text-align: justify;
 }
 
 .jheronimus {
