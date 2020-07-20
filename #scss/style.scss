@@ -1,8 +1,34 @@
+@font-face {
+    font-family: 'Jheronimus';
+    src: url('../fonts/Jheronimus/Jheronimus-ExtraBold.eot');
+    src: local('Jheronimus ExtraBold'), local('Jheronimus-ExtraBold'),
+        url('../fonts/Jheronimus/Jheronimus-ExtraBold.eot') format('embedded-opentype'),
+        url('../fonts/Jheronimus/Jheronimus-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Jheronimus/Jheronimus-ExtraBold.woff') format('woff'),
+        url('../fonts/Jheronimus/Jheronimus-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Norms';
+    src: url('../fonts/Norms/TTNormsPro-Regular.eot');
+    src: local('TT Norms Pro Regular'), local('TTNormsPro-Regular'),
+        url('../fonts/Norms/TTNormsPro-Regular.eot') format('embedded-opentype'),
+        url('../fonts/Norms/TTNormsPro-Regular.woff2') format('woff2'),
+        url('../fonts/Norms/TTNormsPro-Regular.woff') format('woff'),
+        url('../fonts/Norms/TTNormsPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import "_nullstyle";
 
 .wrapper {
+	font-family: 'norms';
 }
 .header__school {
+	
 }
 .container {
 }
@@ -26,5 +52,9 @@
 }
 .test {
 }
-.test__text {
+.jheronimus {
+		font-family: 'Jheronimus';
+}
+.norms{
+	font-family: 'norms';
 }
