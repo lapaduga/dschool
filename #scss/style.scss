@@ -59,10 +59,11 @@
 }
 .header__burger-logo {
 	display: flex;
-	max-width: 550px;
+	max-width: 525px;
 	justify-content: space-between;
 	align-items: center;
 	flex: 1 1 auto;
+	margin: 0 15px 0 0;
 }
 .header__school-burger {
 	border: 1px solid lightcoral;
@@ -79,13 +80,19 @@
 	line-height: 150%;
 }
 .header__logo {
+	flex: 0 0 297px;
+	img{
+		max-width: 100%;
+		display: block;
+	}
 }
 .header__school-contacts {
 	display: flex;
-	max-width: 550px;
+	max-width: 525px;
 	justify-content: space-between;
 	flex: 1 1 auto;
 	align-items: center;
+	padding: 0 0 0 15px;
 }
 .header__school-phone {
 	font-family: "Jheronimus";
@@ -105,6 +112,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a22cea', endColorstr='#7000ff',GradientType=1 );
 }
 .test {
+	padding: 150px 0 0 0;
 	font-size: 26px;
 	text-align: justify;
 }
