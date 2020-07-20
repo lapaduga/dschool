@@ -210,7 +210,7 @@ h6 {
   background-color: #fff;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-  z-index: -1;
+  z-index: 0;
 }
 
 .header__school-link {
