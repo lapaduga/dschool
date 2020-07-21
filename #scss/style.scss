@@ -24,6 +24,9 @@
 
 @import "_nullstyle";
 
+body.lock{
+	overflow: hidden;
+}
 .wrapper {
 	font-family: "norms";
 }
@@ -80,7 +83,9 @@
 	position: relative;
 	width: 20px;
 	height: 14px;
-	z-index: 3;
+	z-index: 61;
+	transition: all 0.4s ease 0s;
+	cursor: pointer;
 	span {
 		position: absolute;
 		background-color: #000000;
@@ -88,6 +93,21 @@
 		width: 100%;
 		height: 2px;
 		top: 6px;
+		transition: all 0.4s ease 0s;
+	}
+}
+
+.header__school-burger.active:before{
+	transform: rotate(45deg);
+	top: 6px;
+}
+.header__school-burger.active:after{
+	transform: rotate(-45deg);
+	bottom: 6px;
+}
+.header__school-burger.active{
+	span{
+		transform: scale(0);
 	}
 }
 
@@ -99,6 +119,7 @@
 	width: 100%;
 	height: 2px;
 	left: 0;
+	transition: all 0.4s ease 0s;
 }
 
 .header__school-burger:before {
@@ -112,14 +133,54 @@
 .header__school-menu {
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: -100%;
 	height: 100%;
 	background-color: #fff;
-	transition: all 0.5s ease 0s;
-	z-index: -1;
-	width: 38%;
+	transition: all 0.4s ease 0s;
+	z-index: 3;
+	width: 720px;
+	overflow: auto;
+	.header__logo{
+		position: relative;
+		top: 37px;
+		left: 318px;
+		img{
+			max-width: 282px;
+		}
+	}
+}
+.header__school-menu.active{
+	left: 0;
+}
+.bg-for-menu{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 130vw;
+	height: 130vh;
+	position: absolute;
+	top: -60px;
+	left: -60px;
+	z-index: 60;
+	transition: all 0.4s ease 0s;
+	visibility: hidden;
+	opacity: 0;
+}
+.bg-for-menu.active{
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.4s ease 0s;
+}
+.menu-button{
+	position: relative;
+	top: 140px;
+	left: 318px;
 }
 .header__school-list {
+	position: relative;
+	top: 90px;
+	left: 318px;
+	li{
+		margin: 0 0 24px 0;
+	}
 }
 .header__school-link {
 	color: #000;
@@ -151,7 +212,7 @@
 	line-height: 130%;
 	padding: 0 15px 0 0;
 	position: relative;
-	z-index: 3;
+	z-index: 2;
 }
 .unibutton {
 	padding: 20px 48px;
@@ -166,7 +227,7 @@
 .school-button {
 	margin: 0 0 0 15px;
 	position: relative;
-	z-index: 3;
+	z-index: 2;
 }
 .test {
 	padding: 150px 0 0 0;
