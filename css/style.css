@@ -102,6 +102,10 @@ h6 {
   font-weight: 700;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 body.lock {
   overflow: hidden;
 }
