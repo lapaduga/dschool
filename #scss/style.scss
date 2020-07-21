@@ -70,6 +70,10 @@ body.lock{
 	height: 20px;
 	display: none;
 	flex: 0 0 20px;
+	transition: all 0.4 ease 0s;
+}
+.header__school-menu-phone{
+	display: none;
 }
 .header__burger-logo {
 	display: flex;
@@ -184,6 +188,7 @@ body.lock{
 	position: relative;
 	top: 140px;
 	left: 318px;
+	margin: 0 0 50px 0;
 }
 .header__school-list {
 	position: relative;
@@ -239,7 +244,14 @@ body.lock{
 	margin: 0 0 0 15px;
 	position: relative;
 	z-index: 2;
+	transition: all 0.4 ease 0s;
 }
+
+.visibility{
+	visibility: hidden;
+	transition: all 0.4 ease 0s;
+}
+
 .test {
 	padding: 150px 0 0 0;
 	font-size: 26px;
@@ -266,6 +278,33 @@ body.lock{
 	.header__school-contacts {
 		max-width: 250px;
 	}
+	.header__school-menu{
+		width: 500px;
+	}
+	.header__school-list {
+		top: 40px;
+		left: 115px;
+	}
+	.header__school-menu{
+		.header__logo{
+			top: 4px;
+			left: 115px;
+			img{
+				max-width: 185px;
+			}
+		}
+	}
+	.menu-button{
+		top: 80px;
+		left: 115px;
+	}
+	.header__school-menu-phone{
+		width: 20px;
+		position: relative;
+		top: -779px;
+		left: 430px;
+		display: block;
+	}
 }
 
 @media (max-width: 580px) {
@@ -275,7 +314,55 @@ body.lock{
 	.header__school-mobile-phone{
 		display: block;
 	}
+	.header__school-menu-phone{
+		left: 360px;
+	}
 	.header__school{
 		padding: 0 20px;
+	}
+	.header__school-menu{
+		width: 400px;
+	}
+	.header__school-list {
+		top: 40px;
+		left: 85px;
+	}
+	.header__school-menu{
+		.header__logo{
+			top: 4px;
+			left: 85px;
+			img{
+				max-width: 185px;
+			}
+		}
+	}
+	.menu-button{
+		left: 85px;
+	}
+}
+
+@media (max-width: 480px){
+	.header__school-menu{
+		width: 320px;
+	}
+	.header__school-menu{
+		.header__logo{
+			left: 65px;
+		}
+	}
+	.header__school-list {
+		left: 65px;
+	}
+	.menu-button{
+		left: 65px;
+	}
+	.header__school-menu-phone{
+		top: -899px;
+		left: 280px;
+	}
+	.header__school-list{
+		li{
+			width: 230px;
+		}
 	}
 }
