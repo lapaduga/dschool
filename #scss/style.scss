@@ -57,6 +57,14 @@
 	align-items: center;
 	height: 125px;
 }
+.header__school-mobile-phone{
+	position: relative;
+	z-index: 51;
+	width: 20px;
+	height: 20px;
+	display: none;
+	flex: 0 0 20px;
+}
 .header__burger-logo {
 	display: flex;
 	max-width: 550px;
@@ -110,6 +118,7 @@
 	background-color: #fff;
 	transition: all 0.5s ease 0s;
 	z-index: 0;
+	display: none;
 }
 .header__school-list {
 }
@@ -191,5 +200,11 @@
 @media (max-width: 580px) {
 	.header__school-phone {
 		display: none;
+	}
+	.header__school-mobile-phone{
+		display: block;
+	}
+	.header__school{
+		padding: 0 20px;
 	}
 }

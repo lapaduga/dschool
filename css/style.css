@@ -147,6 +147,17 @@ h6 {
   height: 125px;
 }
 
+.header__school-mobile-phone {
+  position: relative;
+  z-index: 51;
+  width: 20px;
+  height: 20px;
+  display: none;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
+}
+
 .header__burger-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,6 +222,7 @@ h6 {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   z-index: 0;
+  display: none;
 }
 
 .header__school-link {
@@ -311,5 +323,11 @@ h6 {
 @media (max-width: 580px) {
   .header__school-phone {
     display: none;
+  }
+  .header__school-mobile-phone {
+    display: block;
+  }
+  .header__school {
+    padding: 0 20px;
   }
 }
