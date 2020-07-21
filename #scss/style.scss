@@ -24,6 +24,9 @@
 
 @import "_nullstyle";
 
+body{
+	//overflow-x: hidden;
+}
 body.lock{
 	overflow: hidden;
 }
@@ -139,7 +142,8 @@ body.lock{
 	transition: all 0.4s ease 0s;
 	z-index: 3;
 	width: 720px;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 	.header__logo{
 		position: relative;
 		top: 37px;
@@ -163,6 +167,13 @@ body.lock{
 	transition: all 0.4s ease 0s;
 	visibility: hidden;
 	opacity: 0;
+}
+.close-menu-area{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
 .bg-for-menu.active{
 	visibility: visible;
