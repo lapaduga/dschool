@@ -252,18 +252,6 @@ body.lock{
 	transition: all 0.4 ease 0s;
 }
 
-.test {
-	padding: 150px 0 0 0;
-	font-size: 26px;
-	text-align: justify;
-}
-.jheronimus {
-	font-family: "Jheronimus";
-}
-.norms {
-	font-family: "norms";
-}
-
 @media (max-width: 900px) {
 	.header__school-body {
 		height: 50px;
@@ -365,4 +353,11 @@ body.lock{
 			width: 230px;
 		}
 	}
+}
+
+.small-container{
+	max-width: 1360px;
+}
+.big-container{
+	max-width: 1600px;
 }
