@@ -26,12 +26,14 @@
 
 body{
 	overflow-x: hidden;
+	height: 100%;
 }
 body.lock{
 	overflow: hidden;
 }
 .wrapper {
 	font-family: "norms";
+	min-height: 100vh;
 }
 .header__school {
 	position: fixed;
@@ -360,4 +362,53 @@ body.lock{
 }
 .big-container{
 	max-width: 1600px;
+}
+
+.fullscreen {
+	display: flex;
+	min-height: 100vh;
+	padding: 130px 0 0 0;
+}
+.fullscreen__body {
+	display: flex;
+	justify-content: space-between;
+}
+.fullscreen__info {
+}
+.fullscreen__label {
+}
+.fullscreen__title {
+}
+.title {
+}
+.fullscreen__text {
+}
+.text {
+}
+.fullscreen__start-duration {
+}
+.fullscreen__start {
+}
+.start-duration-item {
+}
+.fullscreen__start-text {
+}
+.fullscreen__start-date {
+}
+.fullscreen__duration {
+}
+.fullscreen__duration-text {
+}
+.fullscreen__duration-time {
+}
+.fullscreen__training-projects {
+}
+.fullscreen__fixed-label {
+}
+.fullscreen__info-image-1 {
+}
+.fullscreen__info-image-2 {
+}
+.fullscreen__image {
+	
 }

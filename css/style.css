@@ -104,6 +104,7 @@ h6 {
 
 body {
   overflow-x: hidden;
+  height: 100%;
 }
 
 body.lock {
@@ -112,6 +113,7 @@ body.lock {
 
 .wrapper {
   font-family: "norms";
+  min-height: 100vh;
 }
 
 .header__school {
@@ -498,4 +500,21 @@ body.lock {
 
 .big-container {
   max-width: 1600px;
+}
+
+.fullscreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  padding: 130px 0 0 0;
+}
+
+.fullscreen__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
