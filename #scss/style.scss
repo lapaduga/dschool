@@ -272,7 +272,7 @@ body.lock {
 	background: linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a22cea', endColorstr='#7000ff',GradientType=1 );
 	animation: gradient 15s ease infinite;
-	background: linear-gradient(-45deg, #7000ff, #a22cea, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #a22cea, #7000ff);
 	background-size: 400% 400%;
 }
 .unibutton:hover {
@@ -521,8 +521,6 @@ body.lock {
 	line-height: 170%;
 	margin: 0 0 0 80px;
 }
-.fullscreen__start {
-}
 .fullscreen__duration {
 	margin: 0 0 0 55px;
 }
@@ -597,12 +595,6 @@ body.lock {
 	}
 }
 
-.test{
-	background-color: rgb(149, 149, 149);
-	z-index: 1;
-	margin-top: 0px;
-	position: relative;
-}
 @media (max-width: 1300px) {
 	.fullscreen__fixed-label {
 		font-size: 14px;
@@ -718,3 +710,4 @@ body.lock {
 		margin-top: 100px;
 	}
 }
+
