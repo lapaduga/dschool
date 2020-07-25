@@ -327,7 +327,7 @@ body.lock {
   position: relative;
   top: 140px;
   left: 318px;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
 }
 
 .header__school-list {
@@ -547,6 +547,9 @@ body.lock {
   }
   .menu-button {
     left: 65px;
+  }
+  .menu-button a {
+    padding: 20px 30px;
   }
   .header__school-menu-phone {
     top: -889px;
@@ -798,7 +801,6 @@ body.lock {
   z-index: 1;
   margin-top: 0px;
   position: relative;
-  margin-top: 100px;
 }
 
 @media (max-width: 1300px) {
@@ -929,5 +931,8 @@ body.lock {
   }
   .fullscreen__start-duration {
     margin: 0 0 20px 0;
+  }
+  .test {
+    margin-top: 100px;
   }
 }
