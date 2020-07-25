@@ -1,12 +1,17 @@
 $(document).ready(function () {
 	window.onscroll = function () { scrollFunction() };
 	function scrollFunction() {
-		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+		if (document.documentElement.clientWidth > 900) {
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+				document.getElementById("header__school-body").style.height = "50px";
+				document.getElementById("school-button").style.display = "none";
+			} else {
+				document.getElementById("header__school-body").style.height = "125px";
+				document.getElementById("school-button").style.display = "inline-block";
+			}
+		} else{
 			document.getElementById("header__school-body").style.height = "50px";
 			document.getElementById("school-button").style.display = "none";
-		} else {
-			document.getElementById("header__school-body").style.height = "125px";
-			document.getElementById("school-button").style.display = "inline-block";
 		}
 	}
 	$('.header__school-burger, .close-menu-area, .header__school-link').click(function (event) {
