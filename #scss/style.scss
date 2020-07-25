@@ -83,6 +83,7 @@ body.lock {
 	//border: 1px solid lightskyblue;
 }
 .header__school-body {
+	transition: all 0.4s ease 0s;
 	position: relative;
 	display: flex;
 	justify-content: space-between;
