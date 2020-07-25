@@ -866,6 +866,6 @@ body.lock {
     display: none;
   }
   .fullscreen__info {
-    max-width: 100%;
+    width: 100%;
   }
 }
