@@ -35,15 +35,15 @@
 }
 
 @font-face {
-    font-family: 'Norms';
-    src: url('TTNormsPro-Medium.eot');
-    src: local('TT Norms Pro Medium'), local('TTNormsPro-Medium'),
-        url('../fonts/Norms/TTNormsPro-Medium.eot') format('embedded-opentype'),
-        url('../fonts/Norms/TTNormsPro-Medium.woff2') format('woff2'),
-        url('../fonts/Norms/TTNormsPro-Medium.woff') format('woff'),
-        url('../fonts/Norms/TTNormsPro-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
+	font-family: "Norms";
+	src: url("TTNormsPro-Medium.eot");
+	src: local("TT Norms Pro Medium"), local("TTNormsPro-Medium"),
+		url("../fonts/Norms/TTNormsPro-Medium.eot") format("embedded-opentype"),
+		url("../fonts/Norms/TTNormsPro-Medium.woff2") format("woff2"),
+		url("../fonts/Norms/TTNormsPro-Medium.woff") format("woff"),
+		url("../fonts/Norms/TTNormsPro-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
 }
 
 @import "_nullstyle";
@@ -274,7 +274,7 @@ body.lock {
 	background: linear-gradient(-45deg, #7000ff, #a22cea, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 }
-.unibutton:hover{
+.unibutton:hover {
 	transition: all 0.4s ease 0s;
 	background: #a22cea;
 	background: -moz-linear-gradient(left, #a22cea 0%, #7000ff 100%);
@@ -547,28 +547,30 @@ body.lock {
 	display: flex;
 	position: relative;
 	transition: all 0.4s ease 0s;
+	margin: 0 0 -20px 0;
+	z-index: 0;
 }
-.fullscreen__training-projects:hover{
+.fullscreen__training-projects:hover {
 	transition: all 0.4s ease 0s;
-	transform: translate(0, -15%);
+	transform: translate(0, -20px);
 }
-.training-projects-link{
+.training-projects-link {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
-.fixed-label-link{
+.fixed-label-link {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
 .fullscreen__fixed-label {
-	position: absolute;	
+	position: absolute;
 	font-family: "Norms";
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 130%;
-	background: #FFFFFF;
+	background: #ffffff;
 	box-shadow: 0px 10px 30px rgba(45, 75, 85, 0.2);
 	border-radius: 50px;
 	padding: 14px 30px;
@@ -591,40 +593,47 @@ body.lock {
 	}
 }
 
-@media (max-width: 1300px){
-	.fullscreen__fixed-label{
+.test{
+	background-color: rgb(149, 149, 149);
+	z-index: 1;
+	margin-top: 0px;
+	position: relative;
+	margin-top: 100px;
+}
+@media (max-width: 1300px) {
+	.fullscreen__fixed-label {
 		font-size: 14px;
 	}
 }
 
-@media (max-width: 1280px){
-	.fullscreen{
+@media (max-width: 1280px) {
+	.fullscreen {
 		padding: 0;
 	}
-	.fullscreen__image{
+	.fullscreen__image {
 		align-self: center;
 	}
-	.fullscreen__info{
+	.fullscreen__info {
 		max-width: 400px;
 	}
 	.fullscreen__start-date,
-	.fullscreen__duration-time{
+	.fullscreen__duration-time {
 		font-size: 20px;
 		line-height: 130%;
 	}
-	.fullscreen__fixed-label{
+	.fullscreen__fixed-label {
 		min-width: 250px;
 		left: 67%;
 	}
 }
-@media (max-width: 992px){
-	.title{
+@media (max-width: 992px) {
+	.title {
 		font-size: 28px;
 	}
-	.text{
+	.text {
 		font-size: 18px;
 	}
-	.fullscreen__info{
+	.fullscreen__info {
 		max-width: 300px;
 	}
 	.fullscreen__start-duration {
@@ -633,30 +642,73 @@ body.lock {
 	.fullscreen__duration {
 		margin: 0;
 	}
-	.fullscreen__button{
+	.fullscreen__button {
 		margin: 0 0 30px 0;
 	}
-	.fullscreen__fixed-label{
+	.fullscreen__fixed-label {
 		left: 90%;
 	}
 	.fullscreen__info {
 		margin: 150px 0 0 20px;
 	}
 }
-@media (max-width: 900px){
+@media (max-width: 900px) {
 	.fullscreen__info {
 		margin: 100px 0 0 20px;
 	}
-	.fullscreen__image{
+	.fullscreen__image {
 		margin: 100px 0 0 0;
 		align-self: flex-start;
 	}
 }
-@media (max-width: 580px){
-	.fullscreen__image{
+@media (max-width: 580px) {
+	.fullscreen__image {
 		display: none;
 	}
-	.fullscreen__info{
-		width: 100%;
+	.fullscreen__info {
+		max-width: 100%;
+		flex: 1 1 100%;
+		margin: 100px 20px 0 20px;
+	}
+	.fullscreen__fixed-label {
+		left: 50%;
+		transform: translate(-50%);
+	}
+	.fullscreen__info-image-1{
+		display: none;
+	}
+	.fullscreen__info-image-2 {
+		margin: 0;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.fullscreen__training-projects{
+		justify-content: center;
+	}
+}
+@media (max-width: 400px){
+	.fullscreen__info-image-2{
+		display: none;
+	}
+	.fullscreen__label {
+		margin: 0 0 25px 0;
+	}
+	.fullscreen__text {
+		margin: 0 0 30px 0;
+	}
+	.fullscreen__training-projects {
+		margin: 0;
+	}
+	.fullscreen__training-projects:hover {
+		transition: all 0.4s ease 0s;
+		transform: translate(0, -20px);
+	}
+	.fullscreen__training-projects:hover {
+		transform: translate(0, 0);
+	}
+	.fullscreen__start-duration{
+		margin: 0 0 20px 0;
 	}
 }

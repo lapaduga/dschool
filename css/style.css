@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Norms';
+  font-family: "Norms";
   src: url("TTNormsPro-Medium.eot");
   src: local("TT Norms Pro Medium"), local("TTNormsPro-Medium"), url("../fonts/Norms/TTNormsPro-Medium.eot") format("embedded-opentype"), url("../fonts/Norms/TTNormsPro-Medium.woff2") format("woff2"), url("../fonts/Norms/TTNormsPro-Medium.woff") format("woff"), url("../fonts/Norms/TTNormsPro-Medium.ttf") format("truetype");
   font-weight: 500;
@@ -734,13 +734,15 @@ body.lock {
   position: relative;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+  margin: 0 0 -20px 0;
+  z-index: 0;
 }
 
 .fullscreen__training-projects:hover {
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-  -webkit-transform: translate(0, -15%);
-          transform: translate(0, -15%);
+  -webkit-transform: translate(0, -20px);
+          transform: translate(0, -20px);
 }
 
 .training-projects-link {
@@ -761,7 +763,7 @@ body.lock {
   font-weight: 500;
   font-size: 18px;
   line-height: 130%;
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 10px 30px rgba(45, 75, 85, 0.2);
           box-shadow: 0px 10px 30px rgba(45, 75, 85, 0.2);
   border-radius: 50px;
@@ -789,6 +791,14 @@ body.lock {
 .fullscreen__image img {
   max-width: 100%;
   height: auto;
+}
+
+.test {
+  background-color: #959595;
+  z-index: 1;
+  margin-top: 0px;
+  position: relative;
+  margin-top: 100px;
 }
 
 @media (max-width: 1300px) {
@@ -866,6 +876,58 @@ body.lock {
     display: none;
   }
   .fullscreen__info {
-    width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin: 100px 20px 0 20px;
+  }
+  .fullscreen__fixed-label {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+  .fullscreen__info-image-1 {
+    display: none;
+  }
+  .fullscreen__info-image-2 {
+    margin: 0;
+  }
+  .fullscreen__info-image-2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .fullscreen__training-projects {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .fullscreen__info-image-2 {
+    display: none;
+  }
+  .fullscreen__label {
+    margin: 0 0 25px 0;
+  }
+  .fullscreen__text {
+    margin: 0 0 30px 0;
+  }
+  .fullscreen__training-projects {
+    margin: 0;
+  }
+  .fullscreen__training-projects:hover {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+  }
+  .fullscreen__training-projects:hover {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .fullscreen__start-duration {
+    margin: 0 0 20px 0;
   }
 }
