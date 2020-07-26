@@ -80,7 +80,7 @@ body.lock {
 .small-container {
 	max-width: 1308px;
 	margin: 0 auto;
-	border: 1px solid lightskyblue;
+	//border: 1px solid lightskyblue;
 }
 .header__school-body {
 	transition: all 0.4s ease 0s;
@@ -848,6 +848,6 @@ body.lock {
 }
 @media (max-width: 360px){
 	.forwho__transparent-button{
-		padding: 10px;
+		padding: 20px 10px;
 	}
 }
