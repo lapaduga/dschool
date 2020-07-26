@@ -155,6 +155,7 @@ body.lock {
 .small-container {
   max-width: 1308px;
   margin: 0 auto;
+  border: 1px solid lightskyblue;
 }
 
 .header__school-body {
@@ -992,7 +993,7 @@ body.lock {
   }
   .forwho__image:hover img {
     left: 10px;
-    bottom: 13px;
+    bottom: 14px;
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
@@ -1035,7 +1036,7 @@ body.lock {
   color: #000;
   padding: 14px 32px;
   border-radius: 50px;
-  border: 1px solid #7101FF;
+  border: 1px solid #7101ff;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   display: inline-block;
@@ -1044,7 +1045,7 @@ body.lock {
 .transparent-button:hover {
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-  background: #7101FF;
+  background: #7101ff;
   color: #fff;
 }
 
@@ -1121,4 +1122,154 @@ body.lock {
   .forwho__transparent-button {
     padding: 20px 10px;
   }
+}
+
+.whywe {
+  min-height: 1120px;
+  background: url("../img/img/whywe/bluecloud.svg") left no-repeat, url("../img/img/whywe/graycloud.svg") right top no-repeat;
+}
+
+.whywe__represent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 80px 0;
+}
+
+.whywe__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 250px;
+          flex: 0 0 250px;
+  margin: 0 50px 0 45px;
+}
+
+.whywe__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.whywe__title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 516px;
+          flex: 0 1 516px;
+  line-height: 150%;
+}
+
+.whywe__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.whywe__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px;
+  background: #fff;
+  border-radius: 15px;
+  height: 320px;
+  -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px 0 50px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 47%;
+          flex: 0 0 47%;
+  overflow: hidden;
+}
+
+.whywe__card-info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 248px;
+          flex: 0 0 248px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.subtitle {
+  font-family: "Jheronimus";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+
+.minitext {
+  font-family: "Norms";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.whywe__card-image {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 248px;
+          flex: 0 0 248px;
+}
+
+.card-image-2 img {
+  position: relative;
+  top: 55px;
+  left: -50px;
+}
+
+.whywe__advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.whywe__advantage-item {
+  padding: 0 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 407px;
+          flex: 1 1 407px;
+}
+
+.whywe__advantage-icon {
+  margin-bottom: 21px;
+  width: 90px;
+  height: 90px;
+}
+
+.whywe__advantage-icon img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.icon-item-1 {
+  background: url("../img/icons/whywe/icon-bg-1.svg") center no-repeat;
+}
+
+.icon-item-2 {
+  background: url("../img/icons/whywe/icon-bg-2.svg") center no-repeat;
+}
+
+.icon-item-3 {
+  background: url("../img/icons/whywe/icon-bg-3.svg") center no-repeat;
+}
+
+.whywe__button {
+  margin-top: 100px;
+  text-align: center;
 }
