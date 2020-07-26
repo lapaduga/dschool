@@ -155,6 +155,7 @@ body.lock {
 .small-container {
   max-width: 1308px;
   margin: 0 auto;
+  border: 1px solid lightskyblue;
 }
 
 .header__school-body {
@@ -563,6 +564,7 @@ body.lock {
 }
 
 .big-container {
+  margin: 0 auto;
   max-width: 1600px;
 }
 
@@ -743,13 +745,6 @@ body.lock {
   z-index: 0;
 }
 
-.fullscreen__training-projects:hover {
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  -webkit-transform: translate(0, -20px);
-          transform: translate(0, -20px);
-}
-
 .training-projects-link {
   position: absolute;
   width: 100%;
@@ -796,6 +791,24 @@ body.lock {
 .fullscreen__image img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 1366px) {
+  .fullscreen__training-projects:hover {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+  }
+}
+
+@media (max-width: 1365px) {
+  .fullscreen__training-projects {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    -webkit-transform: translate(0, -20px);
+            transform: translate(0, -20px);
+  }
 }
 
 @media (max-width: 1300px) {
@@ -929,5 +942,183 @@ body.lock {
   }
   .test {
     margin-top: 100px;
+  }
+}
+
+.forwho {
+  background: #f8f8f8;
+  border-radius: 50px;
+  min-height: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+.forwho__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.forwho__image {
+  padding: 60px 20px 0px 120px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 734px;
+          flex: 0 1 734px;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  background: url("../img/img/forwho/bg.svg") bottom center/contain no-repeat;
+}
+
+.forwho__image img {
+  position: relative;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 1281px) {
+  .forwho__image:hover {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    background: url("../img/img/forwho/bg.svg") 0 30px no-repeat;
+  }
+  .forwho__image:hover img {
+    left: 10px;
+    bottom: 13px;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+.forwho__info {
+  padding: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 546px;
+          flex: 0 1 546px;
+}
+
+.forwho__title {
+  margin: 0 0 16px 0;
+}
+
+.forwho__icon-and-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 62px 0;
+}
+
+.forwho__text {
+  margin: 0 0 0 18px;
+}
+
+.forwho__text p:first-child {
+  margin: 0 0 30px 0;
+}
+
+.transparent-button {
+  font-family: "Norms";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #000;
+  padding: 14px 32px;
+  border-radius: 50px;
+  border: 1px solid #7101FF;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  display: inline-block;
+}
+
+.transparent-button:hover {
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  background: #7101FF;
+  color: #fff;
+}
+
+@media (max-width: 1080px) {
+  .forwho {
+    min-height: 100%;
+  }
+  .forwho__image {
+    padding: 60px 20px 0px 20px;
+  }
+  .transparent-button {
+    font-size: 14px;
+  }
+  .forwho__transparent-button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .forwho__body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .forwho__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .forwho__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .forwho__image img {
+    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .forwho__image {
+    display: none;
+  }
+  .forwho__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .forwho__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .forwho__transparent-button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .forwho {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .forwho__transparent-button {
+    padding: 10px;
   }
 }
