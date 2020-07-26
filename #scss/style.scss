@@ -858,6 +858,7 @@ body.lock {
 	min-height: 1120px;
 	background: url("../img/img/whywe/bluecloud.svg") left no-repeat,
 		url("../img/img/whywe/graycloud.svg") right top no-repeat;
+	margin-bottom: 120px;
 }
 .whywe__represent {
 	display: flex;
@@ -917,8 +918,8 @@ body.lock {
 	align-self: flex-end;
 	flex: 0 0 248px;
 }
-.card-image-2{
-	img{
+.card-image-2 {
+	img {
 		position: relative;
 		top: 55px;
 		left: -50px;
@@ -957,54 +958,163 @@ body.lock {
 	text-align: center;
 }
 
-@media(max-width:1365px){
+@media (max-width: 1365px) {
 	.whywe__cards {
 		flex-direction: column;
 		align-items: center;
 	}
-	.whywe__card{
+	.whywe__card {
 		margin-bottom: 30px;
 		width: 620px;
 	}
 }
-@media(max-width:650px){
-	.whywe__card{
+@media (max-width: 650px) {
+	.whywe__card {
 		flex-direction: column;
 		width: 300px;
 		padding: 20px 20px 0 20px;
 	}
-	.card-image-2{
-		img{
+	.card-image-2 {
+		img {
 			top: 0px;
 			left: 0px;
 		}
 	}
-	.whywe__advantages{
+	.whywe__advantages {
 		flex-direction: column;
 		justify-content: flex-start;
 	}
-	.whywe__represent{
+	.whywe__represent {
 		flex-direction: column;
 		margin-bottom: 30px;
 	}
 	.whywe__image {
 		margin: 0 20px;
 	}
-	.whywe__title{
+	.whywe__title {
 		margin: 20px;
 		flex: 1 1 70px;
 	}
-	.whywe__advantage-item{
+	.whywe__advantage-item {
 		flex: 1 1 200px;
 		margin-bottom: 30px;
 	}
-	.whywe__cards{
+	.whywe__cards {
 		margin-bottom: 30px;
 	}
 	.whywe__button {
 		margin: 30px 0;
 	}
-	.forwho{
+	.forwho {
+		margin-bottom: 50px;
+	}
+}
+
+.doc {
+	background: #f8f8f8;
+	border-radius: 50px;
+	min-height: 892px;
+	margin-bottom: 120px;
+	overflow: hidden;
+}
+.doc__body {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.doc__info {
+	padding: 0 20px;
+	min-height: 692px;
+	max-width: 625px;
+}
+.doc__stamp {
+	margin-bottom: 48px;
+}
+.doc__title {
+	margin-bottom: 32px;
+	max-width: 516px;
+}
+.doc__text {
+	margin-bottom: 48px;
+	p:first-child{
+		margin-bottom: 16px;
+		padding: 0 0 0 46px;
+		background: url('../img/icons/doc/1..svg') 0px 10px no-repeat;
+	}
+	p:last-child{
+		padding: 0 0 0 46px;
+		background: url('../img/icons/doc/2..svg') 0px 10px no-repeat;
+	}
+}
+.doc__notice {
+	background: #FFFFFF;
+border-radius: 15px;
+width: 105%;
+padding: 50px;
+display: flex;
+align-items: center;
+}
+.doc__notice-icon{
+	flex: 0 0 74px;
+	width: 74px;
+	height: 68px;
+	position: relative;
+	background: url('../img/icons/doc/arrow-bg.svg') 0 0 no-repeat;
+	img{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -30%);
+	}
+}
+.doc__notice-text {
+	padding-left: 45px;
+}
+.doc__image {
+	padding: 0 20px;
+	margin-right: -137px;
+	align-self: center;
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media(max-width:1280px){
+	.doc__image{
+		margin-right: 0px;
+	}
+	.doc__info {
+		padding: 0 20px;
+		min-height: 692px;
+		max-width: 625px;
+		flex: 1 1 50%;
+	}
+}
+@media(max-width:1080px){
+	.doc__image{
+		margin-top: 30px;
+		flex: 0 1 50%;
+	}
+}
+@media(max-width:767px){
+	.doc__body {
+		margin-top: 50px;
+		flex-direction: column;
+	}
+	.doc__notice {
+	width: 100%;
+	display: block;
+	padding: 30px;
+	}
+	.doc__notice-text {
+		padding: 20px 0 0 0;
+	}
+	.whywe{
+		margin-bottom: 70px;
+	}
+	.doc{
 		margin-bottom: 50px;
 	}
 }
