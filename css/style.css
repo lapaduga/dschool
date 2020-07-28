@@ -1578,6 +1578,7 @@ body.lock {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 80px;
+  padding: 0 20px;
 }
 
 .how__description-left {
@@ -1701,6 +1702,7 @@ body.lock {
 }
 
 .how__infographic-bg {
+  padding: 0 20px;
   margin-bottom: 48px;
   position: relative;
   top: 0;
@@ -1800,7 +1802,7 @@ body.lock {
 .how__infographic-homework {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20px;
   color: #000000;
 }
 
@@ -1851,7 +1853,7 @@ body.lock {
 .how__infographic-review {
   position: absolute;
   bottom: 0;
-  right: 5%;
+  right: 7%;
   color: #000000;
 }
 
@@ -1863,4 +1865,140 @@ body.lock {
   position: absolute;
   bottom: 100%;
   left: 50%;
+}
+
+.how__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.how__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how__list-item:first-child {
+  margin-left: 20px;
+}
+
+.how__list-item:last-child {
+  margin-right: 20px;
+}
+
+.how__list-item-icon {
+  width: 57px;
+}
+
+.how__list-item-body {
+  margin-left: 41px;
+  text-align: left;
+  width: 188px;
+}
+
+.how__feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+.how__feedback-info {
+  text-align: left;
+}
+
+.how__feedback-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.how__feedback-mes {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.how__feedback-mes:after {
+  content: '';
+  height: 31px;
+  width: 31px;
+  background: url("../img/icons/how/lock.svg") center no-repeat, #fff;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: -20px;
+  -webkit-box-shadow: 0px 10px 30px rgba(45, 75, 85, 0.2);
+          box-shadow: 0px 10px 30px rgba(45, 75, 85, 0.2);
+}
+
+.how__feedback-vk {
+  margin-right: 20px;
+}
+
+.how__feedback-title {
+  max-width: 300px;
+  margin-bottom: 16px;
+}
+
+.how__feedback-text {
+  max-width: 350px;
+  margin-bottom: 80px;
+}
+
+.how__feedback-notice {
+  padding: 0 0 0 105px;
+  font-size: 20px;
+  width: 400px;
+  line-height: 150%;
+  background: url("../img/icons/how/clock.svg") center left no-repeat;
+}
+
+.how__feedback-notice span {
+  font-weight: bold;
+}
+
+.how__feedback-image {
+  margin-bottom: -120px;
+}
+
+.how__feedback-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1280px) {
+  .how__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 700px;
+    margin: 0 auto 80px auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border: greenyellow 1px solid;
+  }
+  .how__list-item:first-child {
+    margin: 0;
+  }
+  .how__list-item:last-child {
+    margin: 20px 0;
+  }
+  .how__list-item:nth-child(2) {
+    margin: 0;
+  }
+  .how__list-item {
+    margin: 20px 0;
+  }
 }
