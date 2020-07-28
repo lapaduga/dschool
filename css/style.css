@@ -1395,7 +1395,7 @@ body.lock {
 }
 
 .doc__notice {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 15px;
   width: 105%;
   padding: 50px;
@@ -1547,4 +1547,270 @@ body.lock {
   .include__title {
     margin: 0 0 20px 0;
   }
+}
+
+.how {
+  padding-top: 100px;
+  background: #f8f8f8;
+  border-radius: 50px;
+  min-height: 1955px;
+  text-align: center;
+}
+
+.small-container {
+  border: 1px solid red;
+}
+
+.how__title {
+  margin: 0 0 16px 0;
+}
+
+.how__text {
+  margin: 0 auto 48px auto;
+  max-width: 845px;
+}
+
+.how__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+.how__description-left {
+  text-align: left;
+}
+
+.how__description-left-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.how__description-left-icon {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.how__description-left-icon-1 {
+  background: url("../img/icons/how/bg-1.svg") center no-repeat;
+}
+
+.how__description-left-icon-2 {
+  background: url("../img/icons/how/bg-2.svg") center no-repeat;
+}
+
+.how__description-left-icon-3 {
+  background: url("../img/icons/how/bg-3.svg") center no-repeat;
+}
+
+.how__description-left-icon-4 {
+  background: url("../img/icons/how/bg-4.svg") center no-repeat;
+}
+
+.how__description-left-text {
+  margin-left: 40px;
+  max-width: 516px;
+}
+
+.how__description-left-text span {
+  font-weight: bold;
+}
+
+.how__description-right {
+  text-align: left;
+  margin-left: 140px;
+}
+
+.how__description-right-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 27px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how__description-right-icon {
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  position: relative;
+}
+
+.how__description-right-icon:after {
+  content: '';
+  height: 16px;
+  width: 2px;
+  border: 1px dashed #7403FE;
+  display: block;
+  position: absolute;
+  top: 85px;
+}
+
+.how__description-right-icon-1 {
+  background: url("../img/icons/how/bg-5.svg") center no-repeat;
+}
+
+.how__description-right-icon-2 {
+  background: url("../img/icons/how/bg-6.svg") center no-repeat;
+}
+
+.how__description-right-icon-3 {
+  background: url("../img/icons/how/bg-7.svg") center no-repeat;
+}
+
+.how__description-right-icon-3:after {
+  content: '';
+  display: none;
+}
+
+.how__description-right-body {
+  font-size: 20px;
+  line-height: 150%;
+  margin-left: 30px;
+  width: 298px;
+}
+
+.how__description-right-body span {
+  font-weight: bold;
+}
+
+.how__infographic-bg {
+  background: url("");
+}
+
+.how__infographic {
+  margin-top: 114px;
+  background: #a22cea;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a22cea), to(#7000ff));
+  background: linear-gradient(to bottom, #a22cea 0%, #7000ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a22cea', endColorstr='#7000ff',GradientType=0 );
+  border-radius: 50px;
+  height: 91px;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+.how__infographic-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.homework {
+  width: 107px;
+  height: 91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.theory {
+  width: 320px;
+  height: 91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/icons/how/Intersect1.svg") no-repeat, #216cff;
+}
+
+.practice {
+  width: 640px;
+  height: 91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/icons/how/Intersect2.svg") bottom right no-repeat;
+}
+
+.review {
+  width: 240px;
+  height: 91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #216cff;
+}
+
+.how__infographic-homework {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.how__infographic-theory {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.how__infographic-practice {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.how__infographic-review {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
