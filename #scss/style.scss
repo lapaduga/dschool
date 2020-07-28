@@ -1172,11 +1172,13 @@ body.lock {
 .how__body {
 }
 .how__title {
-	margin: 0 0 16px 0;
+	margin: 0 0px 16px 0px;
+	padding: 0 20px;
 }
 .how__text {
 	margin: 0 auto 48px auto;
 	max-width: 845px;
+	padding: 0 20px;
 }
 .how__description {
 	display: flex;
@@ -1194,6 +1196,7 @@ body.lock {
 .how__description-left-icon {
 	width: 60px;
 	height: 60px;
+	flex: 0 0 60px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1347,12 +1350,12 @@ body.lock {
 	background-color: #2164FF;
 	position: absolute;
 	top: 100%;
-	left: 35%;
+	left: 25%;
 }
 .how__infographic-theory {
 	position: absolute;
 	bottom: 0;
-	left: 171px;
+	left: 10%;
 	color: #000000;
 }
 .how__infographic-theory:after{
@@ -1382,7 +1385,7 @@ body.lock {
 .how__infographic-review {
 	position: absolute;
 	bottom: 0;
-	right: 7%;
+	left: 82%;
 	color: #000000;
 }
 .how__infographic-review:after{
@@ -1487,7 +1490,6 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 		width: 700px;
 		margin: 0 auto 80px auto;
 		align-items: flex-start;
-		border: greenyellow 1px solid;
 	}
 	.how__list-item:first-child{
 		margin: 0;
@@ -1500,5 +1502,166 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 	}
 	.how__list-item{
 		margin: 20px 0;
+	}
+	.how__description{
+		justify-content: space-between;
+	}
+	.how__description-right {
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 800px){
+	.how__list-item{
+		margin-bottom: 30px;
+	}
+	.how__list-item:first-child{
+		margin-bottom: 30px;
+	}
+	.how__list-item:last-child{
+		margin-bottom: 30px;
+	}
+	.how__list-item:nth-child(odd){
+		margin-right: 15px;
+	}
+	.how__list-item:nth-child(even){
+		margin-left: 15px;
+	}
+	.how__list{
+		justify-content: center;
+	}
+	.how__feedback-text {
+		max-width: 280px;
+		margin-bottom: 40px;
+	}
+	.how__feedback-notice {
+		padding: 100px 0 0 0;
+		font-size: 20px;
+		width: 280px;
+		height: 300px;
+		line-height: 150%;
+		background: url(../img/icons/how/clock.svg) 0 0 no-repeat;
+	}
+	.how__feedback-image{
+		img{
+			padding-left: 20px;
+			margin: 0;
+		}
+	}
+	.how__description {
+		margin-bottom: 30px;
+		flex-wrap: wrap;
+	}
+	.how__description-right {
+		margin-left: 0px;
+	}
+	.homework,
+	.theory,
+	.practice,
+	.review{
+		font-size: 14px;
+	}
+}
+@media (max-width: 750px){
+	.how__infographic-bg{
+		height: 400px;
+		position: relative;
+		top: 0;
+		left: -100px;
+		//transform: translate(-15%);
+	}
+	.how__infographic{
+		transform: rotate(90deg);
+	}
+	.homework{
+		width: 90px;
+	}
+	.theory{
+		width: 90px;
+	}
+	.practice{
+		width: 90px;
+	}
+	.review{
+		width: 90px;
+	}
+	.homework,
+	.theory,
+	.practice,
+	.review{
+		transform: rotate(-90deg);
+	}
+	.how__infographic-homework {
+		top: 50px;
+		left: 300px;
+	}
+	.how__infographic-homework:after{
+		height: 2px;
+		width: 20px;
+		top: 50%;
+		left: -22%;
+	}
+	.how__infographic-theory {
+		top: 140px;
+		left: 300px;
+	}
+	.how__infographic-theory:after{
+		height: 2px;
+		width: 20px;
+		top: 5.5%;
+		left: -18%;
+	}
+	.how__infographic-practice {
+		top: 230px;
+		left: 300px;
+	}
+	.how__infographic-practice:after{
+		height: 2px;
+		width: 20px;
+		top: 50%;
+		left: -19%;
+	}
+	.how__infographic-review {
+		bottom: 50px;
+		left: 300px;
+	}
+	.how__infographic-review:after{
+		height: 2px;
+		width: 20px;
+		top: 50%;
+		left: -32px;
+	}
+	.how__list{
+		width: 280px;
+	}
+	.how__list-item-text{
+		font-size: 18px;
+	}
+	.how__list-item{
+		margin: 30px 0;
+	}
+	.how__list-item:first-child{
+		margin-bottom: 30px;
+	}
+	.how__list-item:last-child{
+		margin: 0px;
+	}
+	.how__list-item:nth-child(odd){
+		margin-right: 0px;
+	}
+	.how__list-item:nth-child(even){
+		margin-left: 0px;
+	}
+	.how__list-item-body{
+		width: 300px;
+	}
+	.how__feedback{
+		align-items: center;
+	}
+	.how__feedback-image{
+		margin: 0 0 30px 0;
+		img{
+			padding: 20px;
+		}
 	}
 }
