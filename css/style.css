@@ -1701,11 +1701,21 @@ body.lock {
 }
 
 .how__infographic-bg {
-  background: url("");
+  margin-bottom: 48px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 223px;
+  background: url("../img/icons/how/infographic-bg1.svg") 20px 100px no-repeat, url("../img/icons/how/infographic-bg2.svg") 26% 10px no-repeat, url("../img/icons/how/infographic-bg3.svg") 63% 55px no-repeat, url("../img/icons/how/infographic-bg4.svg") 90% 15px no-repeat;
 }
 
 .how__infographic {
-  margin-top: 114px;
   background: #a22cea;
   background: -webkit-gradient(linear, left top, left bottom, from(#a22cea), to(#7000ff));
   background: linear-gradient(to bottom, #a22cea 0%, #7000ff 100%);
@@ -1791,26 +1801,66 @@ body.lock {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  color: #000000;
+}
+
+.how__infographic-homework:after {
+  content: '';
+  height: 20px;
+  width: 2px;
+  background-color: #2164FF;
+  position: absolute;
+  top: 100%;
+  left: 35%;
 }
 
 .how__infographic-theory {
   position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
+  bottom: 0;
+  left: 171px;
+  color: #000000;
+}
+
+.how__infographic-theory:after {
+  content: '';
+  height: 20px;
+  width: 2px;
+  background-color: #2164FF;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
 }
 
 .how__infographic-practice {
   position: absolute;
   top: 0;
-  left: 0;
-  display: none;
+  left: 50%;
+  color: #000000;
+}
+
+.how__infographic-practice:after {
+  content: '';
+  height: 20px;
+  width: 2px;
+  background-color: #2164FF;
+  position: absolute;
+  top: 100%;
+  left: 50%;
 }
 
 .how__infographic-review {
   position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
+  bottom: 0;
+  right: 5%;
+  color: #000000;
+}
+
+.how__infographic-review:after {
+  content: '';
+  height: 20px;
+  width: 2px;
+  background-color: #2164FF;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
 }
