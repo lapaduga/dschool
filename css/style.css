@@ -1666,10 +1666,10 @@ body.lock {
 }
 
 .how__description-right-icon:after {
-  content: '';
+  content: "";
   height: 16px;
   width: 2px;
-  border: 1px dashed #7403FE;
+  border: 1px dashed #7403fe;
   display: block;
   position: absolute;
   top: 85px;
@@ -1688,7 +1688,7 @@ body.lock {
 }
 
 .how__description-right-icon-3:after {
-  content: '';
+  content: "";
   display: none;
 }
 
@@ -1809,10 +1809,10 @@ body.lock {
 }
 
 .how__infographic-homework:after {
-  content: '';
+  content: "";
   height: 20px;
   width: 2px;
-  background-color: #2164FF;
+  background-color: #2164ff;
   position: absolute;
   top: 100%;
   left: 25%;
@@ -1826,10 +1826,10 @@ body.lock {
 }
 
 .how__infographic-theory:after {
-  content: '';
+  content: "";
   height: 20px;
   width: 2px;
-  background-color: #2164FF;
+  background-color: #2164ff;
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -1843,10 +1843,10 @@ body.lock {
 }
 
 .how__infographic-practice:after {
-  content: '';
+  content: "";
   height: 20px;
   width: 2px;
-  background-color: #2164FF;
+  background-color: #2164ff;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -1860,10 +1860,10 @@ body.lock {
 }
 
 .how__infographic-review:after {
-  content: '';
+  content: "";
   height: 20px;
   width: 2px;
-  background-color: #2164FF;
+  background-color: #2164ff;
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -1932,7 +1932,7 @@ body.lock {
 }
 
 .how__feedback-mes:after {
-  content: '';
+  content: "";
   height: 31px;
   width: 31px;
   background: url("../img/icons/how/lock.svg") center no-repeat, #fff;
@@ -2225,7 +2225,7 @@ body.lock {
   .how__description-right-icon:after {
     height: 85px;
     width: 2px;
-    border: 1px dashed #7403FE;
+    border: 1px dashed #7403fe;
     top: 30px;
   }
   .how__description-left-text {

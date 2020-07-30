@@ -81,7 +81,6 @@ body.lock {
 .small-container {
 	max-width: 1308px;
 	margin: 0 auto;
-	//border: 1px solid lightskyblue;
 }
 .header__school-body {
 	transition: all 0.4s ease 0s;
@@ -422,7 +421,6 @@ body.lock {
 .big-container {
 	margin: 0 auto;
 	max-width: 1600px;
-	//border: 1px solid red;
 }
 
 .fullscreen {
@@ -1167,9 +1165,6 @@ body.lock {
 	min-height: 1955px;
 	text-align: center;
 }
-
-.how__body {
-}
 .how__title {
 	margin: 0 0px 16px 0px;
 	padding: 0 20px;
@@ -1238,11 +1233,11 @@ body.lock {
 	color: #fff;
 	position: relative;
 }
-.how__description-right-icon:after{
-	content: '';
+.how__description-right-icon:after {
+	content: "";
 	height: 16px;
 	width: 2px;
-	border: 1px dashed #7403FE;
+	border: 1px dashed #7403fe;
 	display: block;
 	position: absolute;
 	top: 85px;
@@ -1256,8 +1251,8 @@ body.lock {
 .how__description-right-icon-3 {
 	background: url("../img/icons/how/bg-7.svg") center/contain no-repeat;
 }
-.how__description-right-icon-3:after{
-	content: '';
+.how__description-right-icon-3:after {
+	content: "";
 	display: none;
 }
 .how__description-right-body {
@@ -1269,8 +1264,7 @@ body.lock {
 		font-weight: bold;
 	}
 }
-
-.how__infographic-bg{
+.how__infographic-bg {
 	padding: 0 20px;
 	margin-bottom: 48px;
 	position: relative;
@@ -1279,12 +1273,11 @@ body.lock {
 	display: flex;
 	align-items: center;
 	height: 223px;
-	background: url('../img/icons/how/infographic-bg1.svg') 20px 100px no-repeat,
-	url('../img/icons/how/infographic-bg2.svg') 26% 10px no-repeat,
-	url('../img/icons/how/infographic-bg3.svg') 63% 55px no-repeat,
-	url('../img/icons/how/infographic-bg4.svg') 90% 15px no-repeat;
+	background: url("../img/icons/how/infographic-bg1.svg") 20px 100px no-repeat,
+		url("../img/icons/how/infographic-bg2.svg") 26% 10px no-repeat,
+		url("../img/icons/how/infographic-bg3.svg") 63% 55px no-repeat,
+		url("../img/icons/how/infographic-bg4.svg") 90% 15px no-repeat;
 }
-
 .how__infographic {
 	background: #a22cea;
 	background: -moz-linear-gradient(top, #a22cea 0%, #7000ff 100%);
@@ -1318,7 +1311,7 @@ body.lock {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url('../img/icons/how/Intersect1.svg') no-repeat, #216cff;
+	background: url("../img/icons/how/Intersect1.svg") no-repeat, #216cff;
 }
 .practice {
 	width: 640px;
@@ -1326,7 +1319,7 @@ body.lock {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: url('../img/icons/how/Intersect2.svg') bottom right no-repeat
+	background: url("../img/icons/how/Intersect2.svg") bottom right no-repeat;
 }
 .review {
 	width: 240px;
@@ -1342,11 +1335,11 @@ body.lock {
 	left: 20px;
 	color: #000000;
 }
-.how__infographic-homework:after{
-	content: '';
+.how__infographic-homework:after {
+	content: "";
 	height: 20px;
 	width: 2px;
-	background-color: #2164FF;
+	background-color: #2164ff;
 	position: absolute;
 	top: 100%;
 	left: 25%;
@@ -1357,11 +1350,11 @@ body.lock {
 	left: 10%;
 	color: #000000;
 }
-.how__infographic-theory:after{
-	content: '';
+.how__infographic-theory:after {
+	content: "";
 	height: 20px;
 	width: 2px;
-	background-color: #2164FF;
+	background-color: #2164ff;
 	position: absolute;
 	bottom: 100%;
 	left: 50%;
@@ -1372,11 +1365,11 @@ body.lock {
 	left: 50%;
 	color: #000000;
 }
-.how__infographic-practice:after{
-	content: '';
+.how__infographic-practice:after {
+	content: "";
 	height: 20px;
 	width: 2px;
-	background-color: #2164FF;
+	background-color: #2164ff;
 	position: absolute;
 	top: 100%;
 	left: 50%;
@@ -1387,11 +1380,11 @@ body.lock {
 	left: 82%;
 	color: #000000;
 }
-.how__infographic-review:after{
-	content: '';
+.how__infographic-review:after {
+	content: "";
 	height: 20px;
 	width: 2px;
-	background-color: #2164FF;
+	background-color: #2164ff;
 	position: absolute;
 	bottom: 100%;
 	left: 50%;
@@ -1404,10 +1397,10 @@ body.lock {
 .how__list-item {
 	display: flex;
 }
-.how__list-item:first-child{
+.how__list-item:first-child {
 	margin-left: 20px;
 }
-.how__list-item:last-child{
+.how__list-item:last-child {
 	margin-right: 20px;
 }
 .how__list-item-icon {
@@ -1417,10 +1410,6 @@ body.lock {
 	margin-left: 41px;
 	text-align: left;
 	width: 188px;
-}
-.how__list-item-subtitle {
-}
-.how__list-item-text {
 }
 .how__feedback {
 	display: flex;
@@ -1434,17 +1423,17 @@ body.lock {
 	display: flex;
 	margin-bottom: 32px;
 }
-.how__feedback-mes{
+.how__feedback-mes {
 	position: relative;
 	top: 0;
 	left: 0;
 	z-index: 0;
 }
-.how__feedback-mes:after{
-	content: '';
+.how__feedback-mes:after {
+	content: "";
 	height: 31px;
 	width: 31px;
-	background: url('../img/icons/how/lock.svg') center no-repeat, #fff;
+	background: url("../img/icons/how/lock.svg") center no-repeat, #fff;
 	display: block;
 	border-radius: 50%;
 	position: absolute;
@@ -1454,8 +1443,6 @@ body.lock {
 }
 .how__feedback-vk {
 	margin-right: 20px;
-}
-.how__feedback-tg {
 }
 .how__feedback-title {
 	max-width: 300px;
@@ -1469,63 +1456,63 @@ body.lock {
 	padding: 0 0 0 105px;
 	font-size: 20px;
 	width: 400px;
-line-height: 150%;
-background: url('../img/icons/how/clock.svg') center left no-repeat;
-	span{
+	line-height: 150%;
+	background: url("../img/icons/how/clock.svg") center left no-repeat;
+	span {
 		font-weight: bold;
 	}
 }
 .how__feedback-image {
 	margin-bottom: -120px;
-	img{
+	img {
 		max-width: 100%;
 		height: auto;
 	}
 }
 
-@media (max-width: 1280px){
-	.how__list{
+@media (max-width: 1280px) {
+	.how__list {
 		flex-wrap: wrap;
 		width: 700px;
 		margin: 0 auto 80px auto;
 		align-items: flex-start;
 	}
-	.how__list-item:first-child{
+	.how__list-item:first-child {
 		margin: 0;
 	}
-	.how__list-item:last-child{
+	.how__list-item:last-child {
 		margin: 20px 0;
 	}
-	.how__list-item:nth-child(2){
+	.how__list-item:nth-child(2) {
 		margin: 0;
 	}
-	.how__list-item{
+	.how__list-item {
 		margin: 20px 0;
 	}
-	.how__description{
+	.how__description {
 		justify-content: space-between;
 	}
 	.how__description-right {
 		margin-left: 20px;
 	}
 }
-@media (max-width: 800px){
-	.how__list-item{
+@media (max-width: 800px) {
+	.how__list-item {
 		margin-bottom: 30px;
 	}
-	.how__list-item:first-child{
+	.how__list-item:first-child {
 		margin-bottom: 30px;
 	}
-	.how__list-item:last-child{
+	.how__list-item:last-child {
 		margin-bottom: 30px;
 	}
-	.how__list-item:nth-child(odd){
+	.how__list-item:nth-child(odd) {
 		margin-right: 15px;
 	}
-	.how__list-item:nth-child(even){
+	.how__list-item:nth-child(even) {
 		margin-left: 15px;
 	}
-	.how__list{
+	.how__list {
 		justify-content: center;
 	}
 	.how__feedback-text {
@@ -1540,8 +1527,8 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 		line-height: 150%;
 		background: url(../img/icons/how/clock.svg) 0 0 no-repeat;
 	}
-	.how__feedback-image{
-		img{
+	.how__feedback-image {
+		img {
 			padding-left: 20px;
 			margin: 0;
 		}
@@ -1556,11 +1543,11 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 	.homework,
 	.theory,
 	.practice,
-	.review{
+	.review {
 		font-size: 14px;
 	}
 }
-@media (max-width: 750px){
+@media (max-width: 750px) {
 	.how__list {
 		width: 100%;
 		flex-direction: column;
@@ -1571,10 +1558,10 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 		width: 100%;
 		margin-left: 30px;
 	}
-	.how__list-item-text{
+	.how__list-item-text {
 		font-size: 18px;
 	}
-	.how__list-item{
+	.how__list-item {
 		margin: 30px 0;
 	}
 	.how__list-item:nth-child(even) {
@@ -1583,22 +1570,22 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 	.how__list-item:nth-child(2) {
 		align-self: start;
 	}
-	.how__list-item:first-child{
+	.how__list-item:first-child {
 		margin-bottom: 30px;
 	}
-	.how__list-item:last-child{
+	.how__list-item:last-child {
 		margin: 0px;
 	}
-	.how__feedback{
+	.how__feedback {
 		align-items: center;
 	}
-	.how__feedback-image{
+	.how__feedback-image {
 		margin: 0 0 30px 0;
-		img{
+		img {
 			padding: 20px;
 		}
 	}
-	.how__infographic{
+	.how__infographic {
 		height: 400px;
 		width: 91px;
 		background: -moz-linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
@@ -1609,21 +1596,21 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 	.homework,
 	.theory,
 	.practice,
-	.review{
+	.review {
 		width: 91px;
 		height: 100px;
 	}
-	.how__infographic-image{
+	.how__infographic-image {
 		flex-direction: column;
 	}
-	.how__infographic-bg{
+	.how__infographic-bg {
 		height: 400px;
 	}
 	.how__infographic-homework {
 		top: 10%;
 		left: 150px;
 	}
-	.how__infographic-homework:after{
+	.how__infographic-homework:after {
 		height: 2px;
 		width: 20px;
 		top: 50%;
@@ -1633,7 +1620,7 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 		top: 34%;
 		left: 150px;
 	}
-	.how__infographic-theory:after{
+	.how__infographic-theory:after {
 		height: 2px;
 		width: 20px;
 		top: 5%;
@@ -1643,7 +1630,7 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 		top: 60%;
 		left: 150px;
 	}
-	.how__infographic-practice:after{
+	.how__infographic-practice:after {
 		height: 2px;
 		width: 20px;
 		top: 50%;
@@ -1653,20 +1640,20 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 		top: 85%;
 		left: 150px;
 	}
-	.how__infographic-review:after{
+	.how__infographic-review:after {
 		height: 2px;
 		width: 20px;
 		top: 23%;
 		left: -34%;
 	}
 }
-@media (max-width: 600px){
-	.how{
+@media (max-width: 600px) {
+	.how {
 		padding-top: 30px;
 	}
 	.how__list-item-icon {
 		width: 40px;
-		img{
+		img {
 			max-width: 100%;
 			height: auto;
 		}
@@ -1676,33 +1663,33 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 		flex-direction: column;
 		padding: 0 20px;
 	}
-	.how__feedback-title{
+	.how__feedback-title {
 		max-width: 100%;
 	}
 	.how__feedback-text {
 		max-width: 100%;
 	}
-	.how__feedback-notice{
+	.how__feedback-notice {
 		width: 100%;
 		height: auto;
 		margin-bottom: 30px;
 	}
 }
-@media (max-width: 430px){
+@media (max-width: 430px) {
 	.how__description-right-body {
 		font-size: 20px;
 		line-height: 150%;
 		margin-left: 20px;
 		width: 100%;
 	}
-	.how__description-right-icon{
+	.how__description-right-icon {
 		width: 50px;
 		height: auto;
 	}
-	.how__description-right-icon:after{
+	.how__description-right-icon:after {
 		height: 85px;
 		width: 2px;
-		border: 1px dashed #7403FE;
+		border: 1px dashed #7403fe;
 		top: 30px;
 	}
 	.how__description-left-text {
@@ -1718,7 +1705,7 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 	.how__infographic-homework,
 	.how__infographic-theory,
 	.how__infographic-practice,
-	.how__infographic-review{
+	.how__infographic-review {
 		font-size: 16px;
 	}
 	.how__infographic-homework {
@@ -1729,7 +1716,7 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 		top: 35%;
 		left: 145px;
 	}
-	.how__infographic-theory:after{
+	.how__infographic-theory:after {
 		top: 4%;
 	}
 	.how__infographic-practice {
@@ -1738,12 +1725,12 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 	.how__infographic-review {
 		left: 145px;
 	}
-	.how__infographic-review:after{
+	.how__infographic-review:after {
 		top: 20%;
 	}
 }
-@media (max-width: 360px){
-	.how__description-right-body{
+@media (max-width: 360px) {
+	.how__description-right-body {
 		font-size: 18px;
 	}
 }
