@@ -1563,74 +1563,6 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 	}
 }
 @media (max-width: 750px){
-	.how__infographic-bg{
-		height: 400px;
-		position: relative;
-		top: 0;
-		left: -100px;
-		//transform: translate(-15%);
-	}
-	.how__infographic{
-		transform: rotate(90deg);
-	}
-	.homework{
-		width: 90px;
-	}
-	.theory{
-		width: 90px;
-	}
-	.practice{
-		width: 90px;
-	}
-	.review{
-		width: 90px;
-	}
-	.homework,
-	.theory,
-	.practice,
-	.review{
-		transform: rotate(-90deg);
-	}
-	.how__infographic-homework {
-		top: 50px;
-		left: 300px;
-	}
-	.how__infographic-homework:after{
-		height: 2px;
-		width: 20px;
-		top: 50%;
-		left: -22%;
-	}
-	.how__infographic-theory {
-		top: 140px;
-		left: 300px;
-	}
-	.how__infographic-theory:after{
-		height: 2px;
-		width: 20px;
-		top: 5.5%;
-		left: -18%;
-	}
-	.how__infographic-practice {
-		top: 230px;
-		left: 300px;
-	}
-	.how__infographic-practice:after{
-		height: 2px;
-		width: 20px;
-		top: 50%;
-		left: -19%;
-	}
-	.how__infographic-review {
-		bottom: 50px;
-		left: 300px;
-	}
-	.how__infographic-review:after{
-		height: 2px;
-		width: 20px;
-		top: 50%;
-		left: -32px;
-	}
 	.how__list{
 		width: 280px;
 	}
@@ -1663,5 +1595,23 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 		img{
 			padding: 20px;
 		}
+	}
+	.how__infographic{
+		height: 400px;
+		width: 91px;
+		background: -moz-linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
+		background: -webkit-linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
+		background: linear-gradient(to right, #a22cea 0%, #7000ff 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a22cea', endColorstr='#7000ff',GradientType=0 );
+	}
+	.homework,
+	.theory,
+	.practice,
+	.review{
+		width: 91px;
+		height: 100px;
+	}
+	.how__infographic-image{
+		flex-direction: column;
 	}
 }
