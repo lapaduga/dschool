@@ -2273,10 +2273,6 @@ body.lock {
   }
 }
 
-.small-container {
-  border: 1px solid greenyellow;
-}
-
 .examples {
   margin: 240px 0 80px 0;
 }
@@ -2343,9 +2339,6 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   padding: 0 20px;
   border: 1px solid red;
   position: relative;
@@ -2356,22 +2349,21 @@ body.lock {
           flex: 1 1 60%;
 }
 
-.examples__body-image img {
-  max-width: 100%;
-  height: auto;
-}
-
 .front-image {
   position: absolute;
-  top: -35px;
+  top: 43%;
   right: 350px;
   z-index: 1;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
 }
 
 .back-image {
   position: absolute;
-  top: 160px;
-  left: 390px;
+  bottom: 43%;
+  right: 0px;
+  -webkit-transform: translate(0%, 65%);
+          transform: translate(0%, 65%);
 }
 
 .examples__remark {
@@ -2381,4 +2373,73 @@ body.lock {
 
 .examples__remark-arrow {
   margin-left: -50px;
+}
+
+@media (max-width: 1280px) {
+  .front-image {
+    top: 40%;
+    left: -10%;
+    -webkit-transform: translate(0%, -50%) scale(0.8);
+            transform: translate(0%, -50%) scale(0.8);
+  }
+  .back-image {
+    bottom: 53%;
+    right: 0px;
+    -webkit-transform: translate(0%, 65%) scale(0.8);
+            transform: translate(0%, 65%) scale(0.8);
+  }
+}
+
+@media (max-width: 1080px) {
+  .examples__remark-arrow {
+    margin-left: 50px;
+  }
+  .front-image {
+    top: 45%;
+    left: -10%;
+    z-index: 1;
+    -webkit-transform: translate(0%, -50%) scale(0.7);
+            transform: translate(0%, -50%) scale(0.7);
+  }
+  .back-image {
+    bottom: 50%;
+    right: 0px;
+    -webkit-transform: translate(0%, 65%) scale(0.7);
+            transform: translate(0%, 65%) scale(0.7);
+  }
+}
+
+@media (max-width: 992px) {
+  .front-image {
+    top: 50%;
+    left: -10%;
+  }
+  .back-image {
+    bottom: 50%;
+    right: -10%;
+  }
+  .examples__remark-arrow {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 850px) {
+  .examples__remark-arrow {
+    margin-left: 170px;
+  }
+}
+
+@media (max-width: 767px) {
+  .examples__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .front-image {
+    position: static;
+  }
+  .back-image {
+    position: static;
+  }
 }
