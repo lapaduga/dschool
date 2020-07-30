@@ -2339,8 +2339,10 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 0 20px;
-  border: 1px solid red;
   position: relative;
   top: 0;
   left: 0;
@@ -2430,6 +2432,9 @@ body.lock {
 }
 
 @media (max-width: 767px) {
+  .examples {
+    overflow-x: hidden;
+  }
   .examples__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2437,9 +2442,51 @@ body.lock {
             flex-direction: column;
   }
   .front-image {
-    position: static;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0%, -10%) scale(0.7);
+            transform: translate(0%, -10%) scale(0.7);
   }
   .back-image {
-    position: static;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(20%, 130%) scale(0.7);
+            transform: translate(20%, 130%) scale(0.7);
+  }
+  .examples__remark {
+    margin: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .front-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(0%, 0%) scale(0.6);
+            transform: translate(0%, 0%) scale(0.6);
+  }
+  .back-image {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform: translate(0%, 0%) scale(0.6);
+            transform: translate(0%, 0%) scale(0.6);
+  }
+  .examples__remark {
+    margin: 0 20px 0 0;
+  }
+  .examples__body-right {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 370px) {
+  .examples__remark-arrow {
+    margin: 0;
+    -webkit-transform: translate(-40%, -50%);
+            transform: translate(-40%, -50%);
   }
 }
