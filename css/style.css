@@ -118,7 +118,6 @@ h6 {
   font-weight: 700;
 }
 
-html,
 body {
   overflow-x: hidden;
   height: 100%;
@@ -2279,5 +2278,6 @@ body.lock {
 }
 
 .examples {
+  display: none;
   margin: 240px 0 80px 0;
 }

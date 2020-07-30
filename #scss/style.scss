@@ -48,7 +48,6 @@
 
 @import "_nullstyle";
 
-html,
 body {
 	overflow-x: hidden;
 	height: 100%;
@@ -1739,6 +1738,7 @@ body.lock {
 	border: 1px solid greenyellow;
 }
 .examples {
+	display: none;
 	margin: 240px 0 80px 0;
 }
 .examples__title {
