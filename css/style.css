@@ -2412,6 +2412,9 @@ body.lock {
 }
 
 @media (max-width: 992px) {
+  .examples {
+    margin: 150px 0 30px 0;
+  }
   .front-image {
     top: 50%;
     left: -10%;
@@ -2426,6 +2429,9 @@ body.lock {
 }
 
 @media (max-width: 850px) {
+  .examples {
+    margin: 50px 0 30px 0;
+  }
   .examples__remark-arrow {
     margin-left: 170px;
   }
@@ -2434,6 +2440,7 @@ body.lock {
 @media (max-width: 767px) {
   .examples {
     overflow-x: hidden;
+    min-height: 1400px;
   }
   .examples__body {
     -webkit-box-orient: vertical;
@@ -2481,12 +2488,48 @@ body.lock {
   .examples__body-right {
     margin-top: 50px;
   }
+  .examples__item-text {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .examples {
+    min-height: 1450px;
+  }
+}
+
+@media (max-width: 430px) {
+  .examples {
+    min-height: 1500px;
+  }
+}
+
+@media (max-width: 390px) {
+  .examples {
+    min-height: 1600px;
+  }
 }
 
 @media (max-width: 370px) {
   .examples__remark-arrow {
+    position: relative;
+    top: -100px;
+    left: -50px;
     margin: 0;
-    -webkit-transform: translate(-40%, -50%);
-            transform: translate(-40%, -50%);
+    -webkit-transform: translate(-40%, -50%) scale(1, -1) rotate(90deg);
+            transform: translate(-40%, -50%) scale(1, -1) rotate(90deg);
+  }
+  .back-image {
+    top: 100%;
+    left: 0;
+    -webkit-transform: translate(-11%, 0%) scale(0.6);
+            transform: translate(-11%, 0%) scale(0.6);
+  }
+}
+
+@media (max-width: 350px) {
+  .examples {
+    min-height: 1700px;
   }
 }
