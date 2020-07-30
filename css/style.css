@@ -118,6 +118,7 @@ h6 {
   font-weight: 700;
 }
 
+html,
 body {
   overflow-x: hidden;
   height: 100%;
@@ -1557,10 +1558,6 @@ body.lock {
   text-align: center;
 }
 
-.small-container {
-  border: 1px solid red;
-}
-
 .how__title {
   margin: 0 0px 16px 0px;
   padding: 0 20px;
@@ -1613,19 +1610,19 @@ body.lock {
 }
 
 .how__description-left-icon-1 {
-  background: url("../img/icons/how/bg-1.svg") center no-repeat;
+  background: url("../img/icons/how/bg-1.svg") center/contain no-repeat;
 }
 
 .how__description-left-icon-2 {
-  background: url("../img/icons/how/bg-2.svg") center no-repeat;
+  background: url("../img/icons/how/bg-2.svg") center/contain no-repeat;
 }
 
 .how__description-left-icon-3 {
-  background: url("../img/icons/how/bg-3.svg") center no-repeat;
+  background: url("../img/icons/how/bg-3.svg") center/contain no-repeat;
 }
 
 .how__description-left-icon-4 {
-  background: url("../img/icons/how/bg-4.svg") center no-repeat;
+  background: url("../img/icons/how/bg-4.svg") center/contain no-repeat;
 }
 
 .how__description-left-text {
@@ -1679,15 +1676,15 @@ body.lock {
 }
 
 .how__description-right-icon-1 {
-  background: url("../img/icons/how/bg-5.svg") center no-repeat;
+  background: url("../img/icons/how/bg-5.svg") center/contain no-repeat;
 }
 
 .how__description-right-icon-2 {
-  background: url("../img/icons/how/bg-6.svg") center no-repeat;
+  background: url("../img/icons/how/bg-6.svg") center/contain no-repeat;
 }
 
 .how__description-right-icon-3 {
-  background: url("../img/icons/how/bg-7.svg") center no-repeat;
+  background: url("../img/icons/how/bg-7.svg") center/contain no-repeat;
 }
 
 .how__description-right-icon-3:after {
@@ -2070,7 +2067,19 @@ body.lock {
 
 @media (max-width: 750px) {
   .how__list {
-    width: 280px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 20px;
+  }
+  .how__list-item-body {
+    width: 100%;
+    margin-left: 30px;
   }
   .how__list-item-text {
     font-size: 18px;
@@ -2078,20 +2087,19 @@ body.lock {
   .how__list-item {
     margin: 30px 0;
   }
+  .how__list-item:nth-child(even) {
+    margin-left: 0px;
+  }
+  .how__list-item:nth-child(2) {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
   .how__list-item:first-child {
     margin-bottom: 30px;
   }
   .how__list-item:last-child {
     margin: 0px;
-  }
-  .how__list-item:nth-child(odd) {
-    margin-right: 0px;
-  }
-  .how__list-item:nth-child(even) {
-    margin-left: 0px;
-  }
-  .how__list-item-body {
-    width: 300px;
   }
   .how__feedback {
     -webkit-box-align: center;
@@ -2123,5 +2131,145 @@ body.lock {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .how__infographic-bg {
+    height: 400px;
+  }
+  .how__infographic-homework {
+    top: 10%;
+    left: 150px;
+  }
+  .how__infographic-homework:after {
+    height: 2px;
+    width: 20px;
+    top: 50%;
+    left: -18%;
+  }
+  .how__infographic-theory {
+    top: 34%;
+    left: 150px;
+  }
+  .how__infographic-theory:after {
+    height: 2px;
+    width: 20px;
+    top: 5%;
+    left: -17%;
+  }
+  .how__infographic-practice {
+    top: 60%;
+    left: 150px;
+  }
+  .how__infographic-practice:after {
+    height: 2px;
+    width: 20px;
+    top: 50%;
+    left: -18%;
+  }
+  .how__infographic-review {
+    top: 85%;
+    left: 150px;
+  }
+  .how__infographic-review:after {
+    height: 2px;
+    width: 20px;
+    top: 23%;
+    left: -34%;
+  }
+}
+
+@media (max-width: 600px) {
+  .how {
+    padding-top: 30px;
+  }
+  .how__list-item-icon {
+    width: 40px;
+  }
+  .how__list-item-icon img {
+    max-width: 100%;
+    height: auto;
+  }
+  .how__feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px;
+  }
+  .how__feedback-title {
+    max-width: 100%;
+  }
+  .how__feedback-text {
+    max-width: 100%;
+  }
+  .how__feedback-notice {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .how__description-right-body {
+    font-size: 20px;
+    line-height: 150%;
+    margin-left: 20px;
+    width: 100%;
+  }
+  .how__description-right-icon {
+    width: 50px;
+    height: auto;
+  }
+  .how__description-right-icon:after {
+    height: 85px;
+    width: 2px;
+    border: 1px dashed #7403FE;
+    top: 30px;
+  }
+  .how__description-left-text {
+    margin-left: 20px;
+    max-width: 100%;
+    font-size: 15px;
+  }
+  .how__description-left-icon {
+    width: 40px;
+    height: auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40px;
+            flex: 0 0 40px;
+  }
+  .how__infographic-homework,
+  .how__infographic-theory,
+  .how__infographic-practice,
+  .how__infographic-review {
+    font-size: 16px;
+  }
+  .how__infographic-homework {
+    top: 10%;
+    left: 145px;
+  }
+  .how__infographic-theory {
+    top: 35%;
+    left: 145px;
+  }
+  .how__infographic-theory:after {
+    top: 4%;
+  }
+  .how__infographic-practice {
+    left: 146px;
+  }
+  .how__infographic-review {
+    left: 145px;
+  }
+  .how__infographic-review:after {
+    top: 20%;
+  }
+}
+
+@media (max-width: 360px) {
+  .how__description-right-body {
+    font-size: 18px;
   }
 }

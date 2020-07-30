@@ -48,6 +48,7 @@
 
 @import "_nullstyle";
 
+html,
 body {
 	overflow-x: hidden;
 	height: 100%;
@@ -1166,9 +1167,7 @@ body.lock {
 	min-height: 1955px;
 	text-align: center;
 }
-.small-container {
-	border: 1px solid red;
-}
+
 .how__body {
 }
 .how__title {
@@ -1203,16 +1202,16 @@ body.lock {
 	color: #fff;
 }
 .how__description-left-icon-1 {
-	background: url("../img/icons/how/bg-1.svg") center no-repeat;
+	background: url("../img/icons/how/bg-1.svg") center/contain no-repeat;
 }
 .how__description-left-icon-2 {
-	background: url("../img/icons/how/bg-2.svg") center no-repeat;
+	background: url("../img/icons/how/bg-2.svg") center/contain no-repeat;
 }
 .how__description-left-icon-3 {
-	background: url("../img/icons/how/bg-3.svg") center no-repeat;
+	background: url("../img/icons/how/bg-3.svg") center/contain no-repeat;
 }
 .how__description-left-icon-4 {
-	background: url("../img/icons/how/bg-4.svg") center no-repeat;
+	background: url("../img/icons/how/bg-4.svg") center/contain no-repeat;
 }
 .how__description-left-text {
 	margin-left: 40px;
@@ -1249,13 +1248,13 @@ body.lock {
 	top: 85px;
 }
 .how__description-right-icon-1 {
-	background: url("../img/icons/how/bg-5.svg") center no-repeat;
+	background: url("../img/icons/how/bg-5.svg") center/contain no-repeat;
 }
 .how__description-right-icon-2 {
-	background: url("../img/icons/how/bg-6.svg") center no-repeat;
+	background: url("../img/icons/how/bg-6.svg") center/contain no-repeat;
 }
 .how__description-right-icon-3 {
-	background: url("../img/icons/how/bg-7.svg") center no-repeat;
+	background: url("../img/icons/how/bg-7.svg") center/contain no-repeat;
 }
 .how__description-right-icon-3:after{
 	content: '';
@@ -1510,7 +1509,6 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 		margin-left: 20px;
 	}
 }
-
 @media (max-width: 800px){
 	.how__list-item{
 		margin-bottom: 30px;
@@ -1563,8 +1561,15 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 	}
 }
 @media (max-width: 750px){
-	.how__list{
-		width: 280px;
+	.how__list {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 20px;
+	}
+	.how__list-item-body {
+		width: 100%;
+		margin-left: 30px;
 	}
 	.how__list-item-text{
 		font-size: 18px;
@@ -1572,20 +1577,17 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 	.how__list-item{
 		margin: 30px 0;
 	}
+	.how__list-item:nth-child(even) {
+		margin-left: 0px;
+	}
+	.how__list-item:nth-child(2) {
+		align-self: start;
+	}
 	.how__list-item:first-child{
 		margin-bottom: 30px;
 	}
 	.how__list-item:last-child{
 		margin: 0px;
-	}
-	.how__list-item:nth-child(odd){
-		margin-right: 0px;
-	}
-	.how__list-item:nth-child(even){
-		margin-left: 0px;
-	}
-	.how__list-item-body{
-		width: 300px;
 	}
 	.how__feedback{
 		align-items: center;
@@ -1613,5 +1615,135 @@ background: url('../img/icons/how/clock.svg') center left no-repeat;
 	}
 	.how__infographic-image{
 		flex-direction: column;
+	}
+	.how__infographic-bg{
+		height: 400px;
+	}
+	.how__infographic-homework {
+		top: 10%;
+		left: 150px;
+	}
+	.how__infographic-homework:after{
+		height: 2px;
+		width: 20px;
+		top: 50%;
+		left: -18%;
+	}
+	.how__infographic-theory {
+		top: 34%;
+		left: 150px;
+	}
+	.how__infographic-theory:after{
+		height: 2px;
+		width: 20px;
+		top: 5%;
+		left: -17%;
+	}
+	.how__infographic-practice {
+		top: 60%;
+		left: 150px;
+	}
+	.how__infographic-practice:after{
+		height: 2px;
+		width: 20px;
+		top: 50%;
+		left: -18%;
+	}
+	.how__infographic-review {
+		top: 85%;
+		left: 150px;
+	}
+	.how__infographic-review:after{
+		height: 2px;
+		width: 20px;
+		top: 23%;
+		left: -34%;
+	}
+}
+@media (max-width: 600px){
+	.how{
+		padding-top: 30px;
+	}
+	.how__list-item-icon {
+		width: 40px;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.how__feedback {
+		display: flex;
+		flex-direction: column;
+		padding: 0 20px;
+	}
+	.how__feedback-title{
+		max-width: 100%;
+	}
+	.how__feedback-text {
+		max-width: 100%;
+	}
+	.how__feedback-notice{
+		width: 100%;
+		height: auto;
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 430px){
+	.how__description-right-body {
+		font-size: 20px;
+		line-height: 150%;
+		margin-left: 20px;
+		width: 100%;
+	}
+	.how__description-right-icon{
+		width: 50px;
+		height: auto;
+	}
+	.how__description-right-icon:after{
+		height: 85px;
+		width: 2px;
+		border: 1px dashed #7403FE;
+		top: 30px;
+	}
+	.how__description-left-text {
+		margin-left: 20px;
+		max-width: 100%;
+		font-size: 15px;
+	}
+	.how__description-left-icon {
+		width: 40px;
+		height: auto;
+		flex: 0 0 40px;
+	}
+	.how__infographic-homework,
+	.how__infographic-theory,
+	.how__infographic-practice,
+	.how__infographic-review{
+		font-size: 16px;
+	}
+	.how__infographic-homework {
+		top: 10%;
+		left: 145px;
+	}
+	.how__infographic-theory {
+		top: 35%;
+		left: 145px;
+	}
+	.how__infographic-theory:after{
+		top: 4%;
+	}
+	.how__infographic-practice {
+		left: 146px;
+	}
+	.how__infographic-review {
+		left: 145px;
+	}
+	.how__infographic-review:after{
+		top: 20%;
+	}
+}
+@media (max-width: 360px){
+	.how__description-right-body{
+		font-size: 18px;
 	}
 }
