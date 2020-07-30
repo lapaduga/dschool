@@ -1756,7 +1756,7 @@ body.lock {
 }
 .examples__body-left {
 	padding: 0 20px;
-
+	flex: 1 1 392px;
 }
 .examples__item {
 	display: flex;
@@ -1764,7 +1764,8 @@ body.lock {
 }
 .examples__item-icon {
 	width: 48px;
-	height: 60px;
+	height: 48px;
+	flex: 0 0 48px;
 	background: url("../img/icons/examples/bg1.svg") center/contain no-repeat;
 	display: flex;
 	justify-content: center;
@@ -1775,17 +1776,42 @@ body.lock {
 	max-width: 344px;
 }
 .examples__body-right {
+	display: flex;
+	justify-content: flex-end;
 	padding: 0 20px;
+	border: 1px solid red;
+	position: relative;
+	top: 0;
+	left: 0;
+	flex: 1 1 60%;
 }
-.examples__body-image {
+
+.examples__body-image{
+	img{
+		max-width: 100%;
+		height: auto;
+	}
 }
+
 .front-image {
+	position: absolute;
+	top: -35px;
+	right: 350px;
+	z-index: 1;
 }
 .back-image {
+	position: absolute;
+	top: 160px;
+	left: 390px;
 }
 .examples__remark {
+	width: 218px;
+	margin: 0 45px 45px 0;
 }
 .examples__remark-subtitle {
 }
 .examples__remark-text {
+}
+.examples__remark-arrow{
+	margin-left: -50px;
 }
