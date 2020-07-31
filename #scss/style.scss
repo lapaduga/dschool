@@ -1939,6 +1939,7 @@ body.lock {
 .choice {
 	margin-top: 120px;
 	margin-bottom: 120px;
+	overflow: hidden;
 }
 .small-container {
 	//border: 1px solid red;
@@ -2084,6 +2085,7 @@ body.lock {
 }
 .choice__title {
 	margin-bottom: 32px;
+	padding: 0 20px;
 }
 .title {
 }
@@ -2118,6 +2120,7 @@ body.lock {
 }
 .choice__request-remark {
 	margin-bottom: 32px;
+	padding: 0 20px;
 	a {
 		text-decoration: underline;
 		color: #000;
@@ -2170,6 +2173,9 @@ body.lock {
 	}
 }
 @media(max-width:800px){
+	.choice{
+		margin: 30px 0;
+	}
 	.choice__body{
 		flex-direction: column-reverse;
 	}
@@ -2192,6 +2198,9 @@ body.lock {
 	}
 }
 @media(max-width:480px){
+	.choice{
+		margin-top: 0;
+	}
 	.choice__buttons{
 		flex-direction: column-reverse;
 	}
@@ -2200,5 +2209,8 @@ body.lock {
 	}
 	.choice__right-button {
 		margin-bottom: 40px;
+	}
+	html{
+		overflow: hidden;
 	}
 }

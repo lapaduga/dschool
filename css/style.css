@@ -2537,6 +2537,7 @@ body.lock {
 .choice {
   margin-top: 120px;
   margin-bottom: 120px;
+  overflow: hidden;
 }
 
 .choice__infoblock {
@@ -2672,6 +2673,7 @@ body.lock {
 
 .choice__title {
   margin-bottom: 32px;
+  padding: 0 20px;
 }
 
 .choice__inputs {
@@ -2719,6 +2721,7 @@ body.lock {
 
 .choice__request-remark {
   margin-bottom: 32px;
+  padding: 0 20px;
 }
 
 .choice__request-remark a {
@@ -2778,6 +2781,9 @@ body.lock {
 }
 
 @media (max-width: 800px) {
+  .choice {
+    margin: 30px 0;
+  }
   .choice__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2806,6 +2812,9 @@ body.lock {
 }
 
 @media (max-width: 480px) {
+  .choice {
+    margin-top: 0;
+  }
   .choice__buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2817,5 +2826,8 @@ body.lock {
   }
   .choice__right-button {
     margin-bottom: 40px;
+  }
+  html {
+    overflow: hidden;
   }
 }
