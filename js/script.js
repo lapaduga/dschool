@@ -19,4 +19,15 @@ $(document).ready(function () {
 		$('body').toggleClass('lock');
 		$('.header__school-mobile-phone, .school-button').toggleClass('visibility');
 	});
+	$('.choice__slider').slick({
+		arrows: false,
+		adaptiveHeight: true,
+		slidesToShow:4,
+		easing:'ease',
+		autoplay: true,
+		touchThreshold:10,
+		centerMode: true,
+		variableWidth: true
+		
+	});
 });

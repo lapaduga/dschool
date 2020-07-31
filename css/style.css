@@ -2533,3 +2533,22 @@ body.lock {
     min-height: 1700px;
   }
 }
+
+.choice__slider .slick-list {
+  overflow: hidden;
+}
+
+.choice__slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.choice__slider-item {
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  text-align: center;
+}
