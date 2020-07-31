@@ -1937,21 +1937,30 @@ body.lock {
 }
 
 .choice {
+	margin-top: 120px;
+	margin-bottom: 120px;
 }
 .small-container {
+	//border: 1px solid red;
 }
 .choice__infoblock {
+	padding: 0 20px;
 }
 .choice__subtitle {
+	width: 250px;
+	margin-bottom: 8px;
 }
 .subtitle {
 }
 .choice__text {
+	max-width: 400px;
+	margin-bottom: 55px;
 }
 .minitext {
 }
 
 .choice__slider {
+	margin-bottom: 100px;
 	.slick-slider {
 	}
 	.slick-slider.slick-initialized {
@@ -2002,16 +2011,79 @@ body.lock {
 .big-container {
 }
 .choice__bg {
+	background: url('../img/icons/choice/purplespot.svg') bottom right no-repeat, #f8f8f8;
+	border-radius: 50px;
+	min-height: 500px;
 }
 .choice__body {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 .choice__image {
+	img {
+		max-width: 100%;
+		height: auto;
+		margin-top: -90px;
+	}
+	position: relative;
+	bottom: 0;
+	left: 0;
+	padding: 0 20px;
+}
+.choice__image-text {
+	width: 161px;
+	height: 148px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Jheronimus';
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 130%;
+	color: #ffffff;
+	background: url("../img/icons/choice/bluespot.svg") center/contain no-repeat;
+	position: absolute;
+	top: 0;
+	left: 65%;
 }
 .choice__info {
+	text-align: center;
+	flex: 1 1 734px;
+	padding: 30px 20px;
 }
 .choice__label {
+	font-family: "Jheronimus";
+	font-weight: 800;
+	font-size: 13px;
+	line-height: 130%;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #32c82f;
+	background-color: #fff;
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 50px;
+	box-shadow: 0px 4px 10px rgba(47, 163, 200, 0.2);
+	border-radius: 50px;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-bottom: 32px;
+}
+.choice__label:after {
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: -15%;
+	left: 88%;
+	background: #32c82f;
+	border-radius: 50%;
 }
 .choice__title {
+	margin-bottom: 32px;
 }
 .title {
 }
@@ -2020,12 +2092,44 @@ body.lock {
 .choice__form {
 }
 .choice__inputs {
+	input {
+		margin: 10px 15px;
+		background: #ffffff;
+		border: 1px solid #e3e3e3;
+		border-radius: 170px;
+		width: 298px;
+		height: 51px;
+		padding-left: 30px;
+		font-family: "Norms";
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 130%;
+		color: #000000;
+		transition: all 0.3s ease 0s;
+	}
+	input::placeholder {
+		color: #000000;
+	}
+	input:hover {
+		transition: all 0.3s ease 0s;
+		border: 1px solid #000;
+	}
+	margin-bottom: 8px;
 }
 .choice__request-remark {
+	margin-bottom: 32px;
+	a {
+		text-decoration: underline;
+		color: #000;
+	}
 }
 .choice__buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .choice__left-button {
+	margin-right: 24px;
 }
 .choice__unibutton {
 }
@@ -2036,4 +2140,65 @@ body.lock {
 .choice__transparent-button {
 }
 .transparent-button {
+}
+
+@media(max-width:1280px){
+	.choice__image {
+		align-self: flex-end;
+		img {
+			margin-top: 0px;
+		}
+	}
+}
+@media(max-width:1080px){
+	.choice__image-text{
+		font-size: 16px;
+		width: 80px;
+		left: 20px;
+	}
+	.choice__bg {
+		background: url('../img/icons/choice/purplespot.svg') 105% 105% no-repeat, #f8f8f8;
+	}
+	.choice__body {
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media(max-width:992px){
+	.choice__bg {
+		background: #f8f8f8;
+	}
+}
+@media(max-width:800px){
+	.choice__body{
+		flex-direction: column-reverse;
+	}
+	.choice__info {
+		flex: 1 1 50%;
+	}
+	.choice__image {
+		align-self: center;
+	}
+	.choice__slider{
+		margin-bottom: 30px;
+	}
+	.choice__slider-item{
+		img{
+			max-width: 70%;
+		}
+	}
+	.choice__text{
+		margin-bottom: 30px;
+	}
+}
+@media(max-width:480px){
+	.choice__buttons{
+		flex-direction: column-reverse;
+	}
+	.choice__left-button {
+		margin-right: 0px;
+	}
+	.choice__right-button {
+		margin-bottom: 40px;
+	}
 }

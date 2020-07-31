@@ -28,6 +28,5 @@ $(document).ready(function () {
 		touchThreshold:10,
 		centerMode: true,
 		variableWidth: true
-		
 	});
 });
