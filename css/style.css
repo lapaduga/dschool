@@ -2832,10 +2832,6 @@ body.lock {
   }
 }
 
-.small-container {
-  border: 1px solid red;
-}
-
 .structure__title {
   text-align: center;
   margin-bottom: 56px;
