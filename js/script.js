@@ -39,4 +39,11 @@ $(document).ready(function () {
 			}
 		]
 	});
+	$('.structure__spoiler-head').click(function(event){
+		if($('.structure__spoilers').hasClass('one')){
+			$('.structure__spoiler-head').not($(this)).removeClass('active');
+			$('.structure__spoiler-body').not($(this).next()).slideUp('300');
+		}
+		$(this).toggleClass('active').next().slideToggle(300);
+	});
 });
