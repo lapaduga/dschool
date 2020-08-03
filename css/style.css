@@ -2967,6 +2967,26 @@ body.lock {
   list-style: disc;
 }
 
+.structure__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.structure__info {
+  padding: 0 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.structure__image {
+  padding: 0 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
 @media (max-width: 767px) {
   .structure__spoiler-head {
     font-size: 16px;
