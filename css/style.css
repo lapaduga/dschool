@@ -2804,7 +2804,7 @@ body.lock {
     margin-bottom: 30px;
   }
   .choice__slider-item img {
-    max-width: 70%;
+    max-width: 60%;
   }
   .choice__text {
     margin-bottom: 30px;
@@ -2827,7 +2827,4 @@ body.lock {
   .choice__right-button {
     margin-bottom: 40px;
   }
-  /* html{
-		overflow: hidden;
-	} */
 }
