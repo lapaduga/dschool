@@ -27,6 +27,14 @@ $(document).ready(function () {
 		autoplay: true,
 		touchThreshold:10,
 		centerMode: true,
-		variableWidth: true
+		variableWidth: true,
+		responsive:[
+			{
+				breakpoint: 480,
+				settings:{
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 });
