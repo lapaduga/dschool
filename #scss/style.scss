@@ -47,7 +47,6 @@
 }
 
 @import "_nullstyle";
-
 body {
 	overflow-x: hidden;
 	height: 100%;
@@ -2157,17 +2156,22 @@ body.lock {
 }
 
 .structure {
+	
 }
 .small-container {
+	border: 1px solid red;
 }
 .structure__title {
 	text-align: center;
 	margin-bottom: 56px;
 }
 .structure__spoilers {
+	padding: 0 20px;
 }
 .structure__spoiler-item {
 	margin-bottom: 24px;
+	max-width: 1062px;
+	margin: 0 auto;
 }
 .structure__spoiler-head {
 	background: #a22cea;
@@ -2205,12 +2209,14 @@ body.lock {
 	align-items: center;
 	justify-content: center;
 	height: 80px;
-	width: 171px;
+	flex: 0 0 171px;
 	margin-left: 18px;
 	background: url("../img/icons/structure/bg-icon.svg") center / contain no-repeat;
 }
 .structure__spoiler-subtitle {
 	margin-left: 25px;
+	max-width: 735px;
+	margin-right: 70px;
 }
 .structure__spoiler-plus {
 	height: 20px;
@@ -2260,4 +2266,59 @@ body.lock {
 	font-family: "Norms";
 	font-size: 20px;
 	line-height: 150%;
+}
+
+@media (max-width: 767px){
+	.structure__spoiler-head{
+		font-size: 16px;
+		overflow: hidden;
+	}
+	html{
+		overflow-x: hidden;
+	}
+	.structure__spoiler-description,
+	.structure__spoiler-list{
+		font-size: 16px;
+	}
+}
+@media (max-width: 530px){
+	.structure__spoiler-icon {
+		justify-content: flex-end;
+		margin-left: -70px;
+		padding-right: 10px;
+	}
+	.structure__spoiler-subtitle {
+		margin-left: 10px;
+		margin-right: 60px;
+	}
+}
+
+@media (max-width: 400px){
+	.structure__spoiler-head,
+	.structure__spoiler-description,
+	.structure__spoiler-list{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 370px){
+	.structure__spoiler-head{
+		flex-direction: column;
+		height: 120px;
+		align-items: flex-start;
+	}
+	.structure__spoiler-icon{
+		flex: none;
+		align-items: flex-end;
+		justify-content: center;
+		margin: -40px 0 10px -40px;
+		padding: 0 0 10px 0;
+		height: 80px;
+		width: 171px;
+	}
+	.structure__spoiler-head,
+	.structure__spoiler-description,
+	.structure__spoiler-list{
+		font-size: 16px;
+	}
 }

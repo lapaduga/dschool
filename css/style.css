@@ -2832,13 +2832,23 @@ body.lock {
   }
 }
 
+.small-container {
+  border: 1px solid red;
+}
+
 .structure__title {
   text-align: center;
   margin-bottom: 56px;
 }
 
+.structure__spoilers {
+  padding: 0 20px;
+}
+
 .structure__spoiler-item {
   margin-bottom: 24px;
+  max-width: 1062px;
+  margin: 0 auto;
 }
 
 .structure__spoiler-head {
@@ -2888,13 +2898,17 @@ body.lock {
       -ms-flex-pack: center;
           justify-content: center;
   height: 80px;
-  width: 171px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 171px;
+          flex: 0 0 171px;
   margin-left: 18px;
   background: url("../img/icons/structure/bg-icon.svg") center/contain no-repeat;
 }
 
 .structure__spoiler-subtitle {
   margin-left: 25px;
+  max-width: 735px;
+  margin-right: 70px;
 }
 
 .structure__spoiler-plus {
@@ -2951,4 +2965,73 @@ body.lock {
 
 .structure__spoiler-list li {
   list-style: disc;
+}
+
+@media (max-width: 767px) {
+  .structure__spoiler-head {
+    font-size: 16px;
+    overflow: hidden;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  .structure__spoiler-description,
+  .structure__spoiler-list {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 530px) {
+  .structure__spoiler-icon {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: -70px;
+    padding-right: 10px;
+  }
+  .structure__spoiler-subtitle {
+    margin-left: 10px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .structure__spoiler-head,
+  .structure__spoiler-description,
+  .structure__spoiler-list {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 370px) {
+  .structure__spoiler-head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 120px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .structure__spoiler-icon {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: -40px 0 10px -40px;
+    padding: 0 0 10px 0;
+    height: 80px;
+    width: 171px;
+  }
+  .structure__spoiler-head,
+  .structure__spoiler-description,
+  .structure__spoiler-list {
+    font-size: 16px;
+  }
 }
