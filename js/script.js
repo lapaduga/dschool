@@ -34,7 +34,7 @@ $(document).ready(function () {
 				settings:{
 					slidesToShow: 1,
 					centerMode: false,
-					variableWidth: true,
+					variableWidth: false
 				}
 			}
 		]
