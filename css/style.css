@@ -2827,7 +2827,7 @@ body.lock {
   .choice__right-button {
     margin-bottom: 40px;
   }
-  html {
-    overflow: hidden;
-  }
+  /* html{
+		overflow: hidden;
+	} */
 }
