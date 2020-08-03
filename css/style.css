@@ -2804,7 +2804,7 @@ body.lock {
     margin-bottom: 30px;
   }
   .choice__slider-item img {
-    max-width: 60%;
+    max-width: 100%;
   }
   .choice__text {
     margin-bottom: 30px;
