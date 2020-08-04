@@ -2533,10 +2533,6 @@ body.lock {
 	}
 }
 
-.register {
-}
-.big-container {
-}
 .register__bg {
 	background: url("../img/img/register/purplespot.svg") 24.5% 22.5% no-repeat,
 		url("../img/img/register/bluespot.svg") 77% 50% no-repeat, #f8f8f8;
@@ -2613,7 +2609,6 @@ body.lock {
 		transition: all 0.4s ease 0s;
 	}
 }
-
 .register__discount-item:first-child:hover {
 	transition: all 0.4s ease 0s;
 	border-radius: 15px 0px 0px 15px;
@@ -2622,7 +2617,6 @@ body.lock {
 	transition: all 0.4s ease 0s;
 	border-radius: 0px 15px 15px 0px;
 }
-
 .register__big-price {
 	font-weight: bold;
 	font-size: 20px;
@@ -2667,10 +2661,6 @@ body.lock {
 	margin: 0 30px;
 	background: url("../img/icons/register/exc.svg") 0 5px no-repeat;
 }
-.register__prepay-button {
-}
-.register__button {
-}
 .register__installment {
 	display: flex;
 	align-items: center;
@@ -2679,12 +2669,6 @@ body.lock {
 	font-size: 20px;
 	line-height: 150%;
 	padding-left: 30px;
-}
-.register__installment-text {
-}
-.register__installment-pay {
-}
-.register__installment-icon {
 }
 .register__friend {
 	display: flex;
