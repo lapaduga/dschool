@@ -19,7 +19,7 @@ $(document).ready(function () {
 		$('body').toggleClass('lock');
 		$('.header__school-mobile-phone, .school-button').toggleClass('visibility');
 	});
-	$('.choice__slider, .about__slider-1, .about__slider-2').slick({
+	$('.choice__slider, .about__slider-2').slick({
 		arrows: false,
 		adaptiveHeight: true,
 		slidesToShow:4,
@@ -27,6 +27,27 @@ $(document).ready(function () {
 		autoplay: true,
 		touchThreshold:10,
 		centerMode: true,
+		variableWidth: true,
+		responsive:[
+			{
+				breakpoint: 480,
+				settings:{
+					slidesToShow: 1,
+					centerMode: false,
+					variableWidth: false
+				}
+			}
+		]
+	});
+	$('.about__slider-1').slick({
+		arrows: false,
+		adaptiveHeight: true,
+		slidesToShow:4,
+		easing:'ease',
+		autoplay: true,
+		autoplaySpeed: 1500,
+		touchThreshold:10,
+		centerMode: false,
 		variableWidth: true,
 		responsive:[
 			{

@@ -2450,7 +2450,7 @@ body.lock {
 }
 
 .small-container{
-	border: 1px solid red;
+	//border: 1px solid red;
 }
 .about {
 	margin-bottom: 120px;
@@ -2479,6 +2479,7 @@ body.lock {
 .about__sliders {
 }
 .about__slider-1 {
+	margin-bottom: 30px;
 	.slick-list {
 		overflow: hidden;
 	}
@@ -2490,6 +2491,7 @@ body.lock {
 .about__slider-item {
 	transition: all 0.4s ease 0s;
 	text-align: center;
+	padding: 0 15px;
 }
 .about__slider-2 {
 	.slick-list {
