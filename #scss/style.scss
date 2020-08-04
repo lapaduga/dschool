@@ -2155,7 +2155,7 @@ body.lock {
 	}
 }
 
-.structure{
+.structure {
 	margin-bottom: 120px;
 }
 .structure__title {
@@ -2307,15 +2307,15 @@ body.lock {
 	border-radius: 50px;
 	padding: 10px 30px;
 	margin-left: -10px;
-	span{
+	span {
 		margin-left: 10px;
 	}
-	span:before{
-		content: '';
+	span:before {
+		content: "";
 		height: 19px;
 		width: 18px;
 		display: inline-block;
-		background: url('../img/icons/structure/clock.svg');
+		background: url("../img/icons/structure/clock.svg");
 		position: relative;
 		top: 4px;
 		left: -10px;
@@ -2341,12 +2341,12 @@ body.lock {
 	}
 }
 
-@media (max-width: 992px){
-	.structure__info{
+@media (max-width: 992px) {
+	.structure__info {
 		padding: 20px;
 	}
-	.structure__image{
-		img{
+	.structure__image {
+		img {
 			max-height: 450px;
 			margin: 0;
 		}
@@ -2356,15 +2356,15 @@ body.lock {
 		flex-direction: column;
 		align-items: flex-start;
 	}
-	.structure__label{
+	.structure__label {
 		margin: -10px 0 0 0;
 		margin-bottom: 30px;
 	}
-	.structure__spoilers{
+	.structure__spoilers {
 		margin-bottom: 50px;
 	}
 }
-@media (max-width: 910px){
+@media (max-width: 910px) {
 	.structure__button {
 		margin: 0 0 20px 0;
 	}
@@ -2373,10 +2373,10 @@ body.lock {
 		align-items: flex-start;
 		flex-direction: column-reverse;
 	}
-	.structure__transparent-button{
+	.structure__transparent-button {
 		margin-bottom: 20px;
 	}
-	.structure__image{
+	.structure__image {
 		display: flex;
 		align-items: flex-end;
 	}
@@ -2393,18 +2393,18 @@ body.lock {
 	.structure__spoiler-list {
 		font-size: 16px;
 	}
-	.structure__label{
+	.structure__label {
 		width: 250px;
 		text-align: center;
 	}
 }
-@media (max-width: 600px){
-	.structure__body{
+@media (max-width: 600px) {
+	.structure__body {
 		flex-direction: column;
 	}
-	.structure__image{
+	.structure__image {
 		justify-content: center;
-		img{
+		img {
 			max-width: 50%;
 		}
 	}
@@ -2460,7 +2460,7 @@ body.lock {
 	margin-bottom: 80px;
 	padding: 0 20px;
 	display: flex;
-	p:first-child{
+	p:first-child {
 		margin-bottom: 16px;
 	}
 }
@@ -2496,39 +2496,326 @@ body.lock {
 	}
 }
 
-@media (max-width: 1080px){
+@media (max-width: 1080px) {
 	.about__info {
 		max-width: 500px;
 	}
-	.about__button{
+	.about__button {
 		flex: 0 0 30%;
 	}
 }
-@media (max-width: 767px){
-	.about__button{
+@media (max-width: 767px) {
+	.about__button {
 		flex: none;
 		padding-left: 20px;
 	}
 }
-@media (max-width: 580px){
-	.about__infoblock{
+@media (max-width: 580px) {
+	.about__infoblock {
 		flex-direction: column;
 		margin-bottom: 30px;
 	}
-	.about__slider-item{
-		img{
+	.about__slider-item {
+		img {
 			max-width: 100%;
 		}
 	}
-	.about__button{
+	.about__button {
 		padding: 20px 20px 20px 0px;
 		margin: 0;
 		align-self: flex-start;
 	}
-	.structure{
+	.structure {
 		margin-bottom: 40px;
 	}
-	.about{
+	.about {
 		margin-bottom: 40px;
+	}
+}
+
+.register {
+}
+.big-container {
+}
+.register__bg {
+	background: url("../img/img/register/purplespot.svg") 24.5% 22.5% no-repeat,
+		url("../img/img/register/bluespot.svg") 77% 50% no-repeat, #f8f8f8;
+	border-radius: 50px;
+	min-height: 1000px;
+}
+.register__body {
+	max-width: 884px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 100px 20px 0 20px;
+}
+.register__title {
+	padding: 0 20px;
+	margin: 0 0 16px 0;
+}
+.register__text {
+	padding: 0 20px;
+	margin: 0 0 23px 0;
+}
+.register__price {
+	min-height: 475px;
+	background: #ffffff;
+	box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	padding: 50px 80px 50px 80px;
+	overflow: hidden;
+}
+.register__full-price {
+	font-family: "Norms";
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 150%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 24px;
+}
+.price-text {
+	margin: 0 0 0 30px;
+}
+.price-number {
+	width: 45%;
+}
+.register__discount {
+	display: flex;
+	align-items: center;
+	border: 1px solid #92ade2;
+	border-radius: 15px;
+	min-height: 100px;
+	margin-bottom: 34px;
+}
+.register__discount-item {
+	text-align: left;
+	flex: 1 1 33.33%;
+	padding-left: 30px;
+	transition: all 0.4s ease 0s;
+	height: 98px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.register__discount-item:hover {
+	transition: all 0.4s ease 0s;
+	color: #fff;
+	flex: 37%;
+	background: #216cff;
+	.register__price-image {
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.4s ease 0s;
+	}
+}
+
+.register__discount-item:first-child:hover {
+	transition: all 0.4s ease 0s;
+	border-radius: 15px 0px 0px 15px;
+}
+.register__discount-item:last-child:hover {
+	transition: all 0.4s ease 0s;
+	border-radius: 0px 15px 15px 0px;
+}
+
+.register__big-price {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 150%;
+	width: 100px;
+}
+.register__price-info {
+	font-size: 14px;
+	line-height: 150%;
+	width: 141px;
+}
+.register__price-image {
+	position: absolute;
+	top: -10px;
+	right: 10px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.4s ease 0s;
+}
+.register__prepay {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-bottom: 90px;
+}
+.register__prepay:after {
+	content: "";
+	height: 1px;
+	width: 130%;
+	background-color: #f1f1f1;
+	position: absolute;
+	top: 100px;
+	left: -90px;
+}
+.register__prepay-text {
+	max-width: 400px;
+	text-align: left;
+	padding-left: 30px;
+	margin: 0 30px;
+	background: url("../img/icons/register/exc.svg") 0 5px no-repeat;
+}
+.register__prepay-button {
+}
+.register__button {
+}
+.register__installment {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 150%;
+	padding-left: 30px;
+}
+.register__installment-text {
+}
+.register__installment-pay {
+}
+.register__installment-icon {
+}
+.register__friend {
+	display: flex;
+	align-items: center;
+	margin-top: -35px;
+}
+.register__image {
+	padding-right: 20px;
+	img {
+		max-width: 100%;
+	}
+}
+.register__info {
+	max-width: 338px;
+	text-align: left;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.register__info-title {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-bottom: 16px;
+}
+.register__info-title-pc {
+	position: absolute;
+	top: 0;
+	right: -10px;
+	transform: translate(0, -50%);
+	width: 67px;
+	height: 62px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background: url("../img/icons/register/pc-bg.svg") center left/contain no-repeat;
+}
+.register__info-text {
+	span {
+		color: #216cff;
+		font-weight: 700;
+	}
+}
+
+@media (max-width: 992px) {
+	.register__friend {
+		margin: 0;
+	}
+	.register__bg {
+		background: url("../img/img/register/purplespot.svg") 20% 20% no-repeat,
+			url("../img/img/register/bluespot.svg") 80% 67% no-repeat, #f8f8f8;
+		min-height: 300px;
+	}
+	.register__info-title-pc {
+		right: 10px;
+		transform: translate(0, -50%);
+	}
+}
+@media (max-width: 767px) {
+	.register__price {
+		padding: 30px;
+	}
+	.register__body {
+		padding: 30px 20px 0 20px;
+	}
+}
+@media (max-width: 700px){
+	.register__discount {
+		flex-direction: column;
+		max-width: 300px;
+		margin: 0 auto 34px auto;
+	}
+	.register__discount-item {
+		text-align: left;
+		flex: none;
+		padding-left: 30px;
+		transition: all 0.4s ease 0s;
+		height: 98px;
+		width: 100%;
+	}
+	.register__discount-item:first-child:hover {
+		border-radius: 15px 15px 0px 0px;
+	}
+	.register__discount-item:last-child:hover {
+		border-radius: 0px 0px 15px 15px;
+	}
+	.register__friend{
+		flex-direction: column-reverse;
+		margin-top: 50px;
+	}
+	.register__bg {
+		background: url("../img/img/register/purplespot.svg") 20% 20% no-repeat,
+			url("../img/img/register/bluespot.svg") 10% 60% no-repeat, #f8f8f8;
+		min-height: 300px;
+	}
+	.register__image{
+		padding: 0;
+	}
+	.register__full-price {
+		flex-direction: column;
+		margin-bottom: 24px;
+	}
+	.price-text {
+		margin: 0;
+	}
+	.price-number {
+		width: 100%;
+	}
+	.register__prepay {
+		flex-direction: column;
+		margin-bottom: 90px;
+	}
+	.register__prepay-button{
+		margin: 40px 0;
+	}
+	.register__prepay:after {
+		top: 170px;
+	}
+	.register__installment{
+		flex-direction: column;
+		padding-left: 0;
+	}
+	.register__installment-text{
+		margin-bottom: 10px;
+	}
+	.register__installment-pay{
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 440px){
+	.register__prepay:after {
+		top: 170px;
 	}
 }
