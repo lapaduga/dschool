@@ -30,7 +30,7 @@ $(document).ready(function () {
 		variableWidth: true,
 		responsive:[
 			{
-				breakpoint: 480,
+				breakpoint: 580,
 				settings:{
 					slidesToShow: 1,
 					centerMode: false,
@@ -51,9 +51,9 @@ $(document).ready(function () {
 		variableWidth: true,
 		responsive:[
 			{
-				breakpoint: 480,
+				breakpoint: 580,
 				settings:{
-					slidesToShow: 1,
+					slidesToShow: 2,
 					centerMode: false,
 					variableWidth: false
 				}
