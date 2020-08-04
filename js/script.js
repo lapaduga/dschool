@@ -19,7 +19,7 @@ $(document).ready(function () {
 		$('body').toggleClass('lock');
 		$('.header__school-mobile-phone, .school-button').toggleClass('visibility');
 	});
-	$('.choice__slider').slick({
+	$('.choice__slider, .about__slider-1, .about__slider-2').slick({
 		arrows: false,
 		adaptiveHeight: true,
 		slidesToShow:4,
