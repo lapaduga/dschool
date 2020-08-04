@@ -2751,6 +2751,9 @@ body.lock {
 	}
 }
 @media (max-width: 700px){
+	.register__prepay:after {
+		width: 1000px;
+	}
 	.register__discount {
 		flex-direction: column;
 		max-width: 300px;
@@ -2763,6 +2766,9 @@ body.lock {
 		transition: all 0.4s ease 0s;
 		height: 98px;
 		width: 100%;
+	}
+	.register__discount-item:hover{
+		flex: none;
 	}
 	.register__discount-item:first-child:hover {
 		border-radius: 15px 15px 0px 0px;
@@ -2794,7 +2800,7 @@ body.lock {
 	}
 	.register__prepay {
 		flex-direction: column;
-		margin-bottom: 90px;
+		margin-bottom: 50px;
 	}
 	.register__prepay-button{
 		margin: 40px 0;
@@ -2816,6 +2822,32 @@ body.lock {
 
 @media (max-width: 440px){
 	.register__prepay:after {
-		top: 170px;
+		top: 200px;
+	}
+	.register__prepay{
+		margin-bottom: 50px;
+	}
+	.register__prepay-text {
+		margin: 0;
+	}
+}
+@media (max-width: 360px){
+	.register__prepay:after {
+		top: 200px;
+	}
+	.register__prepay{
+		margin-bottom: 50px;
+	}
+	.register__info-title {
+		font-size: 24px;
+		width: 200px;
+	}
+	.register__info-title-pc {
+		right: -50px;
+	}
+}
+@media (max-width: 323px){
+	.register__prepay:after {
+		top: 220px;
 	}
 }
