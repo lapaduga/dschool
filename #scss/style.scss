@@ -2533,6 +2533,9 @@ body.lock {
 	}
 }
 
+.register{
+	margin-bottom: 120px;
+}
 .register__bg {
 	background: url("../img/img/register/purplespot.svg") 24.5% 22.5% no-repeat,
 		url("../img/img/register/bluespot.svg") 77% 50% no-repeat, #f8f8f8;
@@ -2841,8 +2844,13 @@ body.lock {
 .employment {
 }
 .employment__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: url('../img/img/employment/bg.svg') center no-repeat;
 }
 .employment__left {
+	max-width: 516px;
 }
 .employment__icon {
 }
