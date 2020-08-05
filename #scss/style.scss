@@ -2533,7 +2533,7 @@ body.lock {
 	}
 }
 
-.register{
+.register {
 	margin-bottom: 120px;
 }
 .register__bg {
@@ -2730,6 +2730,9 @@ body.lock {
 	}
 }
 @media (max-width: 767px) {
+	.register{
+		margin-bottom: 50px;
+	}
 	.register__price {
 		padding: 30px;
 	}
@@ -2737,7 +2740,7 @@ body.lock {
 		padding: 30px 20px 0 20px;
 	}
 }
-@media (max-width: 700px){
+@media (max-width: 700px) {
 	.register__prepay:after {
 		width: 1000px;
 	}
@@ -2754,7 +2757,7 @@ body.lock {
 		height: 98px;
 		width: 100%;
 	}
-	.register__discount-item:hover{
+	.register__discount-item:hover {
 		flex: none;
 	}
 	.register__discount-item:first-child:hover {
@@ -2763,7 +2766,7 @@ body.lock {
 	.register__discount-item:last-child:hover {
 		border-radius: 0px 0px 15px 15px;
 	}
-	.register__friend{
+	.register__friend {
 		flex-direction: column-reverse;
 		margin-top: 50px;
 	}
@@ -2772,7 +2775,7 @@ body.lock {
 			url("../img/img/register/bluespot.svg") 10% 60% no-repeat, #f8f8f8;
 		min-height: 300px;
 	}
-	.register__image{
+	.register__image {
 		padding: 0;
 	}
 	.register__full-price {
@@ -2789,39 +2792,39 @@ body.lock {
 		flex-direction: column;
 		margin-bottom: 50px;
 	}
-	.register__prepay-button{
+	.register__prepay-button {
 		margin: 40px 0;
 	}
 	.register__prepay:after {
 		top: 170px;
 	}
-	.register__installment{
+	.register__installment {
 		flex-direction: column;
 		padding-left: 0;
 	}
-	.register__installment-text{
+	.register__installment-text {
 		margin-bottom: 10px;
 	}
-	.register__installment-pay{
+	.register__installment-pay {
 		margin-bottom: 10px;
 	}
 }
-@media (max-width: 440px){
+@media (max-width: 440px) {
 	.register__prepay:after {
 		top: 200px;
 	}
-	.register__prepay{
+	.register__prepay {
 		margin-bottom: 50px;
 	}
 	.register__prepay-text {
 		margin: 0;
 	}
 }
-@media (max-width: 360px){
+@media (max-width: 360px) {
 	.register__prepay:after {
 		top: 200px;
 	}
-	.register__prepay{
+	.register__prepay {
 		margin-bottom: 50px;
 	}
 	.register__info-title {
@@ -2832,73 +2835,229 @@ body.lock {
 		right: -50px;
 	}
 }
-@media (max-width: 323px){
+@media (max-width: 323px) {
 	.register__prepay:after {
 		top: 220px;
 	}
 }
 
 
-.small-container {
-}
 .employment {
+	margin-bottom: 120px;
 }
 .employment__top {
+	padding-top: 36px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: url('../img/img/employment/bg.svg') center no-repeat;
+	background: url("../img/img/employment/bg.svg") center no-repeat,
+	url("../img/img/employment/purplespot.svg") top right  no-repeat;
+	margin-bottom: 112px;
 }
 .employment__left {
 	max-width: 516px;
+	padding: 0 20px;
+}
+.employment__icon-wrap {
+	margin-bottom: 28px;
 }
 .employment__icon {
+	transition: all 0.4s ease 0s;
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 70px;
+	width: 70px;
+}
+.employment__icon:hover {
+	transition: all 0.4s ease 0s;
+	.red {
+		transition: all 0.4s ease 0s;
+		top: 0;
+		left: 32px;
+	}
+}
+.blue {
+	position: absolute;
+	top: 23px;
+	left: 0;
+}
+.cyan {
+	position: absolute;
+	top: 32px;
+	left: 23px;
+}
+.red {
+	transition: all 0.4s ease 0s;
+	position: absolute;
+	top: -10px;
+	left: 42px;
 }
 .employment__title {
-}
-.title {
+	margin-bottom: 16px;
 }
 .employment__text {
-}
-.text {
-}
-.employment__button {
-}
-.employment__unibutton {
-}
-.unibutton {
+	margin-bottom: 68px;
 }
 .employment__right {
+	padding: 0 30px 0 20px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.employment__backcard{
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 530px;
+	height: 665px;
+	background: #ffffff;
+	border-radius: 15px;
+	box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
 }
 .employment__card {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 530px;
+	height: 665px;
+	background: #ffffff;
+	border-radius: 15px;
+	box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
 }
 .employment__card-info {
+	position: absolute;
+	left: 60px;
 }
 .employment__card-name {
+	margin-bottom: 36px;
 }
 .employment__card-subtitle {
-}
-.subtitle {
+	margin-bottom: 8px;
 }
 .employment__card-text {
-}
-.minitext {
-}
-.employment__card-list {
+	margin-bottom: 28px;
 }
 .employment__image {
-}
-.employment__bottom {
+	position: relative;
+	top: 0;
+	left: 70px;
+	img{
+		max-width: 100%;
+	}
 }
 .employment__bottom-cards {
+	padding: 0 5px;
+	display: flex;
+	margin-bottom: 5px;
 }
 .employment__item {
+	padding: 0 15px;
+	flex: 1 1 25%;
 }
 .employment__item-icon {
+	margin-bottom: 48px;
 }
 .employment__item-subtitle {
-}
-.employment__item-minitext {
+	margin-bottom: 8px;
 }
 .employment__bottom-image {
+	text-align: center;
+	padding: 0 20px;
+	img {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1390px){
+	.employment__image {
+		left: 40px;
+		img{
+			max-width: 80%;
+		}
+	}
+	.employment__card {
+		overflow: hidden;
+	}
+}
+@media (max-width: 900px){
+	.employment__top {
+		padding-top: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+	.employment__text {
+		margin-bottom: 40px;
+	}
+	.employment__left{
+		margin-bottom: 60px;
+	}
+	.employment__bottom-cards{
+		flex-wrap: wrap;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.employment__item {
+		flex: 1 1 40%;
+		margin-top: 20px;
+	}
+}
+@media (max-width: 630px){
+	.employment__card {
+		width: 430px;
+	}
+	.employment__backcard{
+		width: 430px;
+	}
+	.employment__card-info {
+		left: 20px;
+	}
+	.employment__image {
+		left: 25%;
+		img{
+			max-width: 60%;
+		}
+	}
+	.employment {
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 500px){
+	.employment__bottom-cards{
+		margin-bottom: 20px;
+	}
+	.employment__item {
+		flex: 1 1 100%;
+		margin-top: 20px;
+	}
+	.employment__item-icon {
+		margin-bottom: 20px;
+	}
+	.employment__card {
+		width: 280px;
+	}
+	.employment__backcard{
+		width: 280px;
+		top: 20px;
+		left: 15px;
+	}
+	.employment__card-info {
+		left: 20px;
+	}
+	.employment__image {
+		left: 50%;
+		top: -26%;
+		img{
+			max-width: 50%;
+		}
+	}
+	.employment {
+		margin-bottom: 30px;
+	}
 }
