@@ -3076,11 +3076,20 @@ body.lock {
 	text-align: center;
 }
 .testimonials__slider {
+	min-width: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	.slick-list {
+		overflow: hidden;
+	}
+	.slick-track {
+		display: flex;
+		align-items: flex-start;
+	}
 }
 .testimonials__slider-item {
+	min-width: 0;
 	position: relative;
 	top: 0;
 	left: 0;

@@ -4043,6 +4043,7 @@ body.lock {
 }
 
 .testimonials__slider {
+  min-width: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4054,7 +4055,21 @@ body.lock {
           justify-content: center;
 }
 
+.testimonials__slider .slick-list {
+  overflow: hidden;
+}
+
+.testimonials__slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .testimonials__slider-item {
+  min-width: 0;
   position: relative;
   top: 0;
   left: 0;

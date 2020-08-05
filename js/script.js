@@ -60,6 +60,27 @@ $(document).ready(function () {
 			}
 		]
 	});
+	$('.testimonials__slider').slick({
+		arrows: false,
+		adaptiveHeight: true,
+		slidesToShow:4,
+		easing:'ease',
+		autoplay: true,
+		autoplaySpeed: 1500,
+		touchThreshold:10,
+		centerMode: false,
+		variableWidth: true,
+		responsive:[
+			{
+				breakpoint: 580,
+				settings:{
+					slidesToShow: 2,
+					centerMode: false,
+					variableWidth: false
+				}
+			}
+		]
+	});
 	$('.structure__spoiler-head').click(function(event){
 		if($('.structure__spoilers').hasClass('one')){
 			$('.structure__spoiler-head').not($(this)).removeClass('active');
