@@ -4034,7 +4034,7 @@ body.lock {
   top: 0;
   left: 0;
   margin-bottom: 120px;
-  min-height: 900px;
+  min-height: 860px;
   background: #f8f8f8;
   border-radius: 50px;
   background: url("../img/img/testimonials/blue.svg") top left no-repeat, url("../img/img/testimonials/purple.svg") bottom right no-repeat, #f8f8f8;
@@ -4061,23 +4061,25 @@ body.lock {
 }
 
 .testimonials__title {
-  margin: 80px 20px 57px 20px;
+  margin: 0px 20px;
+  padding-top: 80px;
   text-align: center;
 }
 
 .testimonials__slider {
   position: relative;
-  padding: 0 20px;
+  margin: 0 20px;
 }
 
 .testimonials__slider .slick-dots li.slick-active button {
-  background: -webkit-gradient(linear, left top, right top, from(#A22CEA), color-stop(144.81%, #7000FF));
-  background: linear-gradient(90deg, #A22CEA 0%, #7000FF 144.81%);
+  background: -webkit-gradient(linear, left top, right top, from(#a22cea), color-stop(144.81%, #7000ff));
+  background: linear-gradient(90deg, #a22cea 0%, #7000ff 144.81%);
   border: 4px solid #fff;
 }
 
 .testimonials__slider .slick-list {
   overflow: hidden;
+  padding-top: 60px;
 }
 
 .testimonials__slider .slick-track {
@@ -4117,11 +4119,12 @@ body.lock {
 }
 
 .testimonials__slider-item {
+  padding-top: 60px;
   position: relative;
   top: 0;
   left: 0;
   margin: 0 15px 48px 15px;
-  max-width: 407px;
+  max-width: 403px;
   height: 585px;
 }
 
@@ -4130,7 +4133,7 @@ body.lock {
   top: 115px;
   left: 0;
   z-index: 0;
-  width: 407px;
+  width: 100%;
   height: 470px;
   background: #ffffff;
   -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
@@ -4141,9 +4144,9 @@ body.lock {
 
 .testimonials__video {
   height: 229px;
-  width: 407px;
+  width: 403px;
   position: relative;
-  top: 0;
+  top: -50px;
   left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4156,6 +4159,10 @@ body.lock {
           justify-content: center;
   -webkit-filter: drop-shadow(0px 9px 45px rgba(0, 0, 0, 0.1));
           filter: drop-shadow(0px 9px 45px rgba(0, 0, 0, 0.1));
+}
+
+.testimonials__video img {
+  max-width: 100%;
 }
 
 .testimonials__video-icon {
@@ -4176,7 +4183,8 @@ body.lock {
 }
 
 .testimonials__text {
-  padding: 0 30px;
+  padding: 30px;
+  background: url("../img/icons/testimonials/leftquote.svg") 30px 0 no-repeat, url("../img/icons/testimonials/rightquote.svg") 350px 230px no-repeat;
 }
 
 .testimonials__text p {

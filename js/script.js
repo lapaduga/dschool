@@ -63,12 +63,12 @@ $(document).ready(function () {
 	$('.testimonials__slider').slick({
 		arrows: true,
 		dots: true,
-		adaptiveHeight: true,
+		adaptiveHeight: false,
 		slidesToShow:1,
 		slidesToScroll: 1,
 		easing:'ease',
 		touchThreshold:10,
-		centerMode: false,
+		centerMode: true,
 		variableWidth: true,
 		responsive:[
 			{
