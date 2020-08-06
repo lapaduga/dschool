@@ -64,11 +64,12 @@ $(document).ready(function () {
 		arrows: true,
 		dots: true,
 		adaptiveHeight: true,
-		slidesToShow:3,
+		slidesToShow:1,
+		slidesToScroll: 1,
 		easing:'ease',
-		touchThreshold:30,
-		centerMode: true,
-		variableWidth: false,
+		touchThreshold:10,
+		centerMode: false,
+		variableWidth: true,
 		responsive:[
 			{
 				breakpoint: 580,
@@ -78,7 +79,8 @@ $(document).ready(function () {
 					variableWidth: false
 				}
 			}
-		]
+		],
+		appendArrows: $('.testimonials') 
 	});
 	$('.structure__spoiler-head').click(function(event){
 		if($('.structure__spoilers').hasClass('one')){
