@@ -4029,8 +4029,12 @@ body.lock {
   }
 }
 
-.small-container {
+.middle-container {
+  max-width: 1428px;
+  margin: 0 auto;
   border: 1px solid indigo;
+  padding: 0 60px;
+  overflow: hidden;
 }
 
 .testimonials {
@@ -4040,10 +4044,32 @@ body.lock {
   margin-bottom: 120px;
 }
 
+.testimonials__body {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid red;
+  min-height: 900px;
+}
+
 .testimonials__title {
   padding: 80px 20px 0px 20px;
   text-align: center;
   margin-bottom: 57px;
+}
+
+.testimonials__slider {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.testimonials__slider-middle {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .testimonials__slides {
@@ -4055,17 +4081,13 @@ body.lock {
           justify-content: space-between;
   padding: 0 5px;
   margin-bottom: 48px;
+  width: 168%;
 }
 
 .testimonials__slider-item {
   margin: 0 15px;
   max-width: 407px;
-  height: 585px;
-}
-
-.testimonials__slider-item:nth-child(4),
-.testimonials__slider-item:nth-child(5) {
-  display: none;
+  min-height: 585px;
 }
 
 .testimonials__slider-item-bg {
@@ -4073,7 +4095,7 @@ body.lock {
   -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  height: 470px;
+  min-height: 470px;
   width: 100%;
   margin-top: -115px;
   padding-top: 135px;
@@ -4124,6 +4146,8 @@ body.lock {
 
 .testimonials__slider-input {
   text-align: center;
+  margin-bottom: 72px;
+  visibility: hidden;
 }
 
 .testimonials__slider-input input {
@@ -4133,4 +4157,38 @@ body.lock {
   cursor: pointer;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials__slider-navigation {
+  position: relative;
+  bottom: 100px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bar {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 7px;
+  text-align: center;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.bar:hover {
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  background: -webkit-gradient(linear, left top, right top, from(#A22CEA), color-stop(144.81%, #7000FF));
+  background: linear-gradient(90deg, #A22CEA 0%, #7000FF 144.81%);
+  border: 4px solid #fff;
 }
