@@ -60,28 +60,6 @@ $(document).ready(function () {
 			}
 		]
 	});
-	$('.testimonials__slider').slick({
-		arrows: true,
-		dots: true,
-		adaptiveHeight: false,
-		slidesToShow:1,
-		slidesToScroll: 1,
-		easing:'ease',
-		touchThreshold:10,
-		centerMode: true,
-		variableWidth: true,
-		responsive:[
-			{
-				breakpoint: 580,
-				settings:{
-					slidesToShow: 1,
-					centerMode: false,
-					variableWidth: false
-				}
-			}
-		],
-		appendArrows: $('.testimonials') 
-	});
 	$('.structure__spoiler-head').click(function(event){
 		if($('.structure__spoilers').hasClass('one')){
 			$('.structure__spoiler-head').not($(this)).removeClass('active');
