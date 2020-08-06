@@ -3067,7 +3067,7 @@ body.lock {
 	background: #f8f8f8;
 	border-radius: 50px;
 	background: url("../img/img/testimonials/blue.svg") top left no-repeat,
-		url("../img/img/testimonials/purple.svg") bottom right no-repeat;
+		url("../img/img/testimonials/purple.svg") bottom right no-repeat, #f8f8f8;
 }
 .testimonials__body {
 }
@@ -3076,10 +3076,12 @@ body.lock {
 	text-align: center;
 }
 .testimonials__slider {
-	min-width: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	.slick-dots li.slick-active button{
+		background: linear-gradient(90deg, #A22CEA 0%, #7000FF 144.81%);
+		border: 4px solid #fff;
+	}
+	position: relative;
+	padding: 0 60px;
 	.slick-list {
 		overflow: hidden;
 	}
@@ -3087,25 +3089,67 @@ body.lock {
 		display: flex;
 		align-items: flex-start;
 	}
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		margin: -30px 0 0 0;
+		z-index: 10;
+		font-size: 0;
+		width: 30px;
+		height: 60px;
+		.slick-prev {
+			left: 0;
+			background: url("../img/icons/testimonials/leftarrow.svg") 0 0/100% no-repeat;
+		}
+		.slick-next {
+			right: 0;
+			background: url("../img/icons/testimonials/rightarrow.svg") 0 0/100% no-repeat;
+		}
+	}
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		li {
+			list-style: none;
+			margin: 0 10px;
+			
+		}
+		button {
+			font-size: 0;
+			width: 16px;
+			height: 16px;
+			background: #ffffff;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+			border-radius: 50%;
+		}
+	}
 }
 .testimonials__slider-item {
-	min-width: 0;
 	position: relative;
 	top: 0;
 	left: 0;
-	margin: 0 15px;
+	margin: 0 15px 48px 15px;
 	max-width: 407px;
+	height: 585px;
+}
+.testimonials__slider-item-bg{
+	position: absolute;
+	top: 115px;
+	left: 0;
+	z-index: 0;
+	width: 407px;
 	height: 470px;
 	background: #ffffff;
 	box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
 	border-radius: 15px;
+	padding-top: 115px;
 }
 .testimonials__video {
 	height: 229px;
 	position: relative;
 	top: 0;
 	left: 0;
-	transform: translate(0, -50%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -3121,12 +3165,12 @@ body.lock {
 	cursor: pointer;
 }
 .testimonials__subtitle {
+	margin-top: 30px;
 	padding: 0 30px;
-	margin-top: -100px;
 }
 .testimonials__text {
 	padding: 0 30px;
-	p{
+	p {
 		margin-bottom: 20px;
 	}
 }

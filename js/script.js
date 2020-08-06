@@ -61,20 +61,20 @@ $(document).ready(function () {
 		]
 	});
 	$('.testimonials__slider').slick({
-		arrows: false,
+		arrows: true,
+		dots: true,
 		adaptiveHeight: true,
-		slidesToShow:4,
+		slidesToShow:3,
 		easing:'ease',
 		autoplay: true,
-		autoplaySpeed: 1500,
 		touchThreshold:10,
-		centerMode: false,
-		variableWidth: true,
+		centerMode: true,
+		variableWidth: false,
 		responsive:[
 			{
 				breakpoint: 580,
 				settings:{
-					slidesToShow: 2,
+					slidesToShow: 1,
 					centerMode: false,
 					variableWidth: false
 				}
