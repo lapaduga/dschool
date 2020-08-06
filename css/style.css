@@ -4081,13 +4081,20 @@ body.lock {
           justify-content: space-between;
   padding: 0 5px;
   margin-bottom: 48px;
-  width: 168%;
+  width: 173.5%;
+  height: 100%;
 }
 
 .testimonials__slider-item {
   margin: 0 15px;
   max-width: 407px;
   min-height: 585px;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.testimonials__slider-item:nth-child(3) {
+  margin-right: 110px;
 }
 
 .testimonials__slider-item-bg {
@@ -4191,4 +4198,24 @@ body.lock {
   background: -webkit-gradient(linear, left top, right top, from(#A22CEA), color-stop(144.81%, #7000FF));
   background: linear-gradient(90deg, #A22CEA 0%, #7000FF 144.81%);
   border: 4px solid #fff;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+  margin-left: -80%;
 }
