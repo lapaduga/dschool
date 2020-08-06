@@ -66,8 +66,7 @@ $(document).ready(function () {
 		adaptiveHeight: true,
 		slidesToShow:3,
 		easing:'ease',
-		autoplay: true,
-		touchThreshold:10,
+		touchThreshold:30,
 		centerMode: true,
 		variableWidth: false,
 		responsive:[
