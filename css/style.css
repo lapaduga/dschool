@@ -4028,3 +4028,109 @@ body.lock {
     margin-bottom: 30px;
   }
 }
+
+.small-container {
+  border: 1px solid indigo;
+}
+
+.testimonials {
+  background: #f8f8f8;
+  border-radius: 50px;
+  min-height: 900px;
+  margin-bottom: 120px;
+}
+
+.testimonials__title {
+  padding: 80px 20px 0px 20px;
+  text-align: center;
+  margin-bottom: 57px;
+}
+
+.testimonials__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5px;
+  margin-bottom: 48px;
+}
+
+.testimonials__slider-item {
+  margin: 0 15px;
+  max-width: 407px;
+  height: 585px;
+}
+
+.testimonials__slider-item:nth-child(4),
+.testimonials__slider-item:nth-child(5) {
+  display: none;
+}
+
+.testimonials__slider-item-bg {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  height: 470px;
+  width: 100%;
+  margin-top: -115px;
+  padding-top: 135px;
+}
+
+.testimonials__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 229px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.testimonials__video img {
+  max-width: 100%;
+}
+
+.testimonials__video-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.testimonials__subtitle {
+  padding: 0 30px 10px 30px;
+}
+
+.testimonials__text {
+  background: url("../img/icons/testimonials/leftquote.svg") 30px 0 no-repeat, url("../img/icons/testimonials/rightquote.svg") 350px 230px no-repeat;
+  padding: 30px;
+}
+
+.testimonials__text p {
+  margin-bottom: 15px;
+}
+
+.testimonials__slider-input {
+  text-align: center;
+}
+
+.testimonials__slider-input input {
+  margin: 0 7px;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
