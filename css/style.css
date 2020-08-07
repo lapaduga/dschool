@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Jheronimus";
   src: url("../fonts/Jheronimus/Jheronimus-ExtraBold.eot");
@@ -4029,27 +4030,45 @@ body.lock {
   }
 }
 
-.middle-container {
-  max-width: 1428px;
-  margin: 0 auto;
-  border: 1px solid indigo;
-  padding: 0 60px;
-  overflow: hidden;
+.small-container {
+  border: 1px solid #6aff14;
 }
 
 .testimonials {
+  position: relative;
+  top: 0;
+  left: 0;
   background: #f8f8f8;
   border-radius: 50px;
   min-height: 900px;
   margin-bottom: 120px;
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+}
+
+.testimonials .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  margin-top: -30px;
+}
+
+.testimonials .slick-arrow.slick-prev {
+  left: 60px;
+  background: url("../img/icons/testimonials/leftarrow.svg") 0 0/100% no-repeat;
+}
+
+.testimonials .slick-arrow.slick-next {
+  right: 60px;
+  background: url("../img/icons/testimonials/rightarrow.svg") 0 0/100% no-repeat;
 }
 
 .testimonials__body {
-  position: relative;
-  top: 0;
-  left: 0;
-  border: 1px solid red;
-  min-height: 900px;
+  min-height: 950px;
 }
 
 .testimonials__title {
@@ -4059,53 +4078,91 @@ body.lock {
 }
 
 .testimonials__slider {
-  position: relative;
-  top: 0;
-  left: 0;
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка не активная */
+  /* Точки (булиты) */
+  /* Активная точка */
+  /* Элемент точки */
 }
 
-.testimonials__slider-middle {
-  position: absolute;
-  top: 180px;
-  left: 0;
-  height: 100%;
-  width: 100%;
+.testimonials__slider .slick-list {
+  overflow: hidden;
 }
 
-.testimonials__slides {
+.testimonials__slider .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 5px;
-  margin-bottom: 48px;
-  width: 173.5%;
-  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.testimonials__slider .slick-slide.slick-center .testimonials__link {
+  opacity: 1;
+  visibility: visible;
+}
+
+.testimonials__slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials__slider .slick-dots li {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.testimonials__slider .slick-dots li.slick-active button {
+  background: #7000ff;
+  background: -webkit-gradient(linear, left top, right top, from(#a22cea), to(#7000ff));
+  background: linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
+  border: 4px solid #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.testimonials__slider .slick-dots li button {
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 7px;
+  -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
 }
 
 .testimonials__slider-item {
-  margin: 0 15px;
-  max-width: 407px;
-  min-height: 585px;
+  margin: 0 20px;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-}
-
-.testimonials__slider-item:nth-child(3) {
-  margin-right: 110px;
+  width: 407px;
 }
 
 .testimonials__slider-item-bg {
   background: #ffffff;
-  -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  min-height: 470px;
-  width: 100%;
+  min-height: 550px;
   margin-top: -115px;
   padding-top: 135px;
+  width: 100%;
 }
 
 .testimonials__video {
@@ -4143,7 +4200,7 @@ body.lock {
 }
 
 .testimonials__text {
-  background: url("../img/icons/testimonials/leftquote.svg") 30px 0 no-repeat, url("../img/icons/testimonials/rightquote.svg") 350px 230px no-repeat;
+  background: url("../img/icons/testimonials/leftquote.svg") 30px 0 no-repeat, url("../img/icons/testimonials/rightquote.svg") 85% 91% no-repeat;
   padding: 30px;
 }
 
@@ -4151,71 +4208,20 @@ body.lock {
   margin-bottom: 15px;
 }
 
-.testimonials__slider-input {
+.testimonials__link {
+  padding-top: 20px;
   text-align: center;
-  margin-bottom: 72px;
+  opacity: 0;
   visibility: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: all ease 0.3s 0s;
+  transition: all ease 0.3s 0s;
 }
 
-.testimonials__slider-input input {
-  margin: 0 7px;
-  height: 16px;
-  width: 16px;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.testimonials__slider-navigation {
-  position: relative;
-  bottom: 100px;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.bar {
-  width: 16px;
-  height: 16px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  border-radius: 50%;
-  margin: 7px;
-  text-align: center;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-.bar:hover {
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  background: -webkit-gradient(linear, left top, right top, from(#A22CEA), color-stop(144.81%, #7000FF));
-  background: linear-gradient(90deg, #A22CEA 0%, #7000FF 144.81%);
-  border: 4px solid #fff;
-}
-
-#r1:checked ~ .s1 {
-  margin-left: 0;
-}
-
-#r2:checked ~ .s1 {
-  margin-left: -20%;
-}
-
-#r3:checked ~ .s1 {
-  margin-left: -40%;
-}
-
-#r4:checked ~ .s1 {
-  margin-left: -60%;
-}
-
-#r5:checked ~ .s1 {
-  margin-left: -80%;
+.testimonials__link a {
+  background: -webkit-gradient(linear, left top, right top, from(#a22cea), to(#7000ff));
+  background: linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
