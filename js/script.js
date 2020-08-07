@@ -69,7 +69,7 @@ $(document).ready(function () {
 		touchThreshold:10,
 		centerMode: true,
 		variableWidth: true,
-		appendArrows: $('.testimonials'),
+		appendArrows: $('.testimonials')
 	});
 	$('.structure__spoiler-head').click(function(event){
 		if($('.structure__spoilers').hasClass('one')){

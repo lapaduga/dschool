@@ -3060,9 +3060,7 @@ body.lock {
 		margin-bottom: 30px;
 	}
 }
-.small-container {
-	border: 1px solid rgb(106, 255, 20);
-}
+
 .testimonials {
 	position: relative;
 	top: 0;
@@ -3071,7 +3069,6 @@ body.lock {
 	border-radius: 50px;
 	min-height: 900px;
 	margin-bottom: 120px;
-	/* Стрелка */
 	.slick-arrow {
 		position: absolute;
 		top: 50%;
@@ -3081,12 +3078,10 @@ body.lock {
 		height: 60px;
 		margin-top: -30px;
 	}
-	/* Стрелка влево */
 	.slick-arrow.slick-prev {
 		left: 60px;
 		background: url("../img/icons/testimonials/leftarrow.svg") 0 0 / 100% no-repeat;
 	}
-	/* Стрелка вправо */
 	.slick-arrow.slick-next {
 		right: 60px;
 		background: url("../img/icons/testimonials/rightarrow.svg") 0 0 / 100% no-repeat;
@@ -3101,47 +3096,19 @@ body.lock {
 	margin-bottom: 57px;
 }
 .testimonials__slider {
-	/* Слайдер */
-	.slick-slider {
-	}
-	/* Слайдер запущен */
-	.slick-slider.slick-initialized {
-	}
-	/* Слайдер с точками */
-	.slick-slider.slick-dotted {
-	}
-	/* Ограничивающая оболочка */
 	.slick-list {
 		overflow: hidden;
 	}
-	/* Лента слайдов */
 	.slick-track {
 		display: flex;
 		align-items: flex-start;
 	}
-	/* Слайд */
-	.slick-slide {
-	}
-	/* Слайд активный (показывается) */
-	.slick-slide.slick-active {
-	}
-	/* Слайд основной */
-	.slick-slide.slick-current {
-	}
-	/* Слайд по центру */
 	.slick-slide.slick-center {
 		.testimonials__link {
 			opacity: 1;
 			visibility: visible;
 		}
 	}
-	/* Клонированный слайд */
-	.slick-slide.slick-cloned {
-	}
-	/* Стрелка не активная */
-	.slick-arrow.slick-disabled {
-	}
-	/* Точки (булиты) */
 	.slick-dots {
 		display: flex;
 		align-items: center;
@@ -3151,7 +3118,6 @@ body.lock {
 		list-style: none;
 		margin-top: 40px;
 	}
-	/* Активная точка */
 	.slick-dots li.slick-active {
 		button {
 			background: #7000ff;
@@ -3160,7 +3126,6 @@ body.lock {
 			transition: all 0.3s ease 0s;
 		}
 	}
-	/* Элемент точки */
 	.slick-dots li button {
 		font-size: 0;
 		width: 16px;
@@ -3171,7 +3136,6 @@ body.lock {
 		box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
 	}
 }
-
 .testimonials__slider-item {
 	margin: 0 20px;
 	transition: all 0.4s ease 0s;
@@ -3229,4 +3193,85 @@ body.lock {
 	visibility: hidden;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	transition: all ease 0.3s 0s;
+}
+
+@media (max-width: 1490px){
+	.testimonials__slider-item {
+		opacity: 0.2;
+	}
+	.slick-slide.slick-center{
+		opacity: 1;
+	}
+	.testimonials {
+		.slick-arrow {
+			width: 230px;
+			height: 700px;
+			margin-top: 0;
+			transform: translate(0, -50%);
+		}
+		.slick-arrow.slick-prev {
+			left: 0;
+			background: url("../img/icons/testimonials/leftarrow.svg") center /15% no-repeat;
+		}
+		.slick-arrow.slick-next {
+			right: 0;
+			background: url("../img/icons/testimonials/rightarrow.svg") center /15% no-repeat;
+		}
+	}
+}
+@media (max-width: 767px){
+	.testimonials {
+		.slick-arrow {
+			width: 150px;
+		}
+		.slick-arrow.slick-prev {
+			left: 0px;
+			background: url("../img/icons/testimonials/leftarrow.svg") center /20% no-repeat;
+		}
+		.slick-arrow.slick-next {
+			right: 0px;
+			background: url("../img/icons/testimonials/rightarrow.svg") center /20% no-repeat;
+		}
+	}
+}
+@media (max-width: 600px){
+	.testimonials {
+		.slick-arrow {
+			width: 80px;
+		}
+		.slick-arrow.slick-prev {
+			left: 0px;
+			background: url("../img/icons/testimonials/leftarrow.svg") center /40% no-repeat;
+		}
+		.slick-arrow.slick-next {
+			right: 0px;
+			background: url("../img/icons/testimonials/rightarrow.svg") center /40% no-repeat;
+		}
+	}
+}
+@media (max-width: 530px){
+	.testimonials__slider-item {
+		width: 250px;
+	}
+	.testimonials__slider-item-bg {
+		width: 100%;
+		min-height: 700px;
+	}
+	.slick-dots li {
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 380px){
+	.testimonials {
+		.slick-arrow {
+			width: 40px;
+			opacity: 0.4;
+		}
+		.slick-arrow.slick-prev {
+			background: url("../img/icons/testimonials/leftarrow.svg") center /40% no-repeat;
+		}
+		.slick-arrow.slick-next {
+			background: url("../img/icons/testimonials/rightarrow.svg") center /40% no-repeat;
+		}
+	}
 }
