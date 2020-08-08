@@ -4226,6 +4226,9 @@ body.lock {
 }
 
 @media (max-width: 767px) {
+  .testimonials {
+    margin-bottom: 60px;
+  }
   .testimonials .slick-arrow {
     width: 150px;
   }
@@ -4276,5 +4279,65 @@ body.lock {
   }
   .testimonials .slick-arrow.slick-next {
     background: url("../img/icons/testimonials/rightarrow.svg") center/40% no-repeat;
+  }
+}
+
+.faq-icon {
+  background: url("../img/icons/structure-faq/faq-bg.svg") center/100% no-repeat;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 119px;
+          flex: 0 0 119px;
+  margin-left: 40px;
+}
+
+.faq-description {
+  margin-left: 20px;
+}
+
+.faq-item {
+  height: 110px;
+}
+
+.faq-icon-extra {
+  height: 110px;
+  background: url("../img/icons/structure-faq/faq-bg.svg") center/100% no-repeat;
+}
+
+@media (max-width: 530px) {
+  .faq-icon {
+    background: url("../img/icons/structure-faq/faq-bg.svg") center/80% no-repeat;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  .faq-item-extra {
+    height: 150px;
+  }
+  .faq-icon {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: -40px 0 10px -40px;
+    padding: 0 0 10px 0;
+    height: 80px;
+    width: 171px;
+  }
+  .structure__spoiler-head,
+  .structure__spoiler-description,
+  .structure__spoiler-list {
+    font-size: 16px;
   }
 }
