@@ -3277,6 +3277,9 @@ body.lock {
 	}
 }
 
+.faq-one{
+	margin-bottom: 80px;
+}
 .faq-icon{
 	background: url("../img/icons/structure-faq/faq-bg.svg") center / 100% no-repeat;
 	flex: 0 0 119px;
@@ -3291,6 +3294,10 @@ body.lock {
 .faq-icon-extra{
 	height: 110px;
 	background: url("../img/icons/structure-faq/faq-bg.svg") center / 100% no-repeat;
+}
+.faq__transparent-button{
+	text-align: center;
+	margin-bottom: 160px;
 }
 
 @media (max-width: 530px){
