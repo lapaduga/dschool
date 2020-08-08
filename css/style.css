@@ -4350,3 +4350,208 @@ body.lock {
     font-size: 16px;
   }
 }
+
+.last-register-title {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.last-register-text {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.last-bg {
+  background: url("../img/img/register/purplespot.svg") 8% 7% no-repeat, url("../img/img/last/bg-last.svg") bottom center no-repeat;
+  border-radius: 50px;
+  min-height: 790px;
+}
+
+.last-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.last-friend {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  background: -webkit-gradient(linear, left top, right top, from(#A22CEA), to(#7000FF));
+  background: linear-gradient(90deg, #A22CEA 0%, #7000FF 100%);
+  border-radius: 0px 15px 15px 0px;
+  padding: 0 36px;
+}
+
+.last-body {
+  max-width: 100%;
+}
+
+.last__left {
+  padding: 57px 79px;
+}
+
+.last-info {
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.last-info-text span {
+  color: #fff;
+}
+
+.last-image {
+  padding-right: 0;
+}
+
+.last-prepay:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+@media (max-width: 1200px) {
+  .last-info-title-pc {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+    width: 67px;
+    height: 62px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url("../img/icons/register/pc-bg.svg") 0 0/contain no-repeat;
+  }
+}
+
+@media (max-width: 1080px) {
+  .last-info {
+    max-width: 100%;
+    padding: 0;
+  }
+  .last-info .title {
+    font-size: 24px;
+  }
+  .last-friend {
+    padding: 0 20px;
+  }
+  .last__left {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .last-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .last-friend {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background: -webkit-gradient(linear, left top, right top, from(#A22CEA), to(#7000FF));
+    background: linear-gradient(90deg, #A22CEA 0%, #7000FF 100%);
+    border-radius: 0px 0px 15px 15px;
+  }
+  .last-info {
+    margin: 50px 0 0 0;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .last-prepay:after {
+    height: 1px;
+    width: 100%;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 180px;
+    left: 0px;
+  }
+  .last-register-title {
+    text-align: center;
+    margin: 20px;
+  }
+  .last-register-text {
+    text-align: center;
+    margin: 20px;
+  }
+  .last-friend {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .last-info-title-pc {
+    width: 30px;
+    height: 30px;
+  }
+  .last-info-title-pc img {
+    width: 20px;
+    height: 20px;
+  }
+  .last-info {
+    margin: 30px 0 0 0;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .last-friend {
+    padding-top: 50px;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .last-info-title-pc {
+    width: 60px;
+    height: 60px;
+  }
+  .last-info-title-pc img {
+    width: 30px;
+    height: 30px;
+  }
+  .last-register-title {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .last-register-text {
+    text-align: left;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 350px) {
+  .last-prepay {
+    margin-bottom: 20px;
+  }
+}
