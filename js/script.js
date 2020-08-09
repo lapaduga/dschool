@@ -111,7 +111,8 @@ $(document).ready(function () {
 	});
 	$('#popup__unibutton').on('click', function (e) {
 		if ($('#popup__input-1').val() == '') {
-			$('#popup__input-1').css('border', '1px solid red');
+			e.preventDefault();
+			$('#popup__input-1').css('border', '1px solid #AD6060');
 		} else {
 			$('#popup__input-1').css('border', '1px solid #e3e3e3');
 			$('#popup__input-1').on('mouseenter', function () {
@@ -122,7 +123,8 @@ $(document).ready(function () {
 			});
 		}
 		if ($('#popup__input-2').val() == '') {
-			$('#popup__input-2').css('border', '1px solid red');
+			e.preventDefault();
+			$('#popup__input-2').css('border', '1px solid #AD6060');
 		} else {
 			$('#popup__input-2').css('border', '1px solid #e3e3e3');
 			$('#popup__input-2').on('mouseenter', function () {
@@ -132,6 +134,13 @@ $(document).ready(function () {
 				$(this).css('border', '1px solid #e3e3e3');
 			});
 		}
+	});
+	$('#popup__input-1, #popup__input-2').on('focus', function (e) {
+		$(this).attr('placeholder', '');
+	});
+	$('#popup__input-1, #popup__input-2').on('blur', function (e) {
+		$('#popup__input-1').attr('placeholder', 'Имя');
+		$('#popup__input-2').attr('placeholder', 'Email');
 	});
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixed_offset = 100;
