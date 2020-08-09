@@ -4350,6 +4350,10 @@ body.lock {
   }
 }
 
+.last {
+  margin-bottom: 0;
+}
+
 .last-register-title {
   text-align: left;
   margin-left: 10px;
@@ -4381,8 +4385,8 @@ body.lock {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  background: -webkit-gradient(linear, left top, right top, from(#A22CEA), to(#7000FF));
-  background: linear-gradient(90deg, #A22CEA 0%, #7000FF 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#a22cea), to(#7000ff));
+  background: linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
   border-radius: 0px 15px 15px 0px;
   padding: 0 36px;
 }
@@ -4475,8 +4479,8 @@ body.lock {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background: -webkit-gradient(linear, left top, right top, from(#A22CEA), to(#7000FF));
-    background: linear-gradient(90deg, #A22CEA 0%, #7000FF 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#a22cea), to(#7000ff));
+    background: linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
     border-radius: 0px 0px 15px 15px;
   }
   .last-info {
@@ -4558,5 +4562,59 @@ body.lock {
 @media (max-width: 350px) {
   .last-prepay {
     margin-bottom: 20px;
+  }
+}
+
+.footer {
+  height: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+.footer__phone {
+  font-family: "Jheronimus";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.footer__phone a {
+  color: #5f5f5f;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    height: 120px;
+  }
+  .footer__phone {
+    font-size: 14px;
+  }
+  .footer__logo img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100px;
+  }
+  .footer__phone {
+    margin-bottom: 5px;
   }
 }
