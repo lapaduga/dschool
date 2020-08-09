@@ -9,7 +9,6 @@
 	font-weight: 800;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Norms";
 	src: url("../fonts/Norms/TTNormsPro-Regular.eot");
@@ -21,7 +20,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Norms";
 	src: url("TTNormsPro-Bold.eot");
@@ -33,7 +31,6 @@
 	font-weight: bold;
 	font-style: normal;
 }
-
 @font-face {
 	font-family: "Norms";
 	src: url("TTNormsPro-Medium.eot");
@@ -45,7 +42,6 @@
 	font-weight: 500;
 	font-style: normal;
 }
-
 @import "_nullstyle";
 body {
 	overflow-x: hidden;
@@ -128,7 +124,6 @@ body.lock {
 		transition: all 0.4s ease 0s;
 	}
 }
-
 .header__school-burger.active:before {
 	transform: rotate(45deg);
 	top: 6px;
@@ -142,7 +137,6 @@ body.lock {
 		transform: scale(0);
 	}
 }
-
 .header__school-burger:before,
 .header__school-burger:after {
 	content: "";
@@ -153,15 +147,12 @@ body.lock {
 	left: 0;
 	transition: all 0.4s ease 0s;
 }
-
 .header__school-burger:before {
 	top: 0;
 }
-
 .header__school-burger:after {
 	bottom: 0;
 }
-
 .header__school-menu {
 	position: fixed;
 	top: 0;
@@ -3338,14 +3329,12 @@ body.lock {
 	text-align: left;
 	margin-left: 10px;
 }
-
 .last-bg {
 	background: url("../img/img/register/purplespot.svg") 8% 7% no-repeat,
 		url("../img/img/last/bg-last.svg") bottom center no-repeat;
 	border-radius: 50px;
 	min-height: 790px;
 }
-
 .last-price {
 	display: flex;
 	justify-content: space-between;
@@ -3508,8 +3497,6 @@ body.lock {
 	justify-content: space-between;
 	padding: 0 20px;
 }
-.footer__logo {
-}
 .footer__phone {
 	font-family: "Jheronimus";
 	font-style: normal;
@@ -3519,8 +3506,6 @@ body.lock {
 	a{
 		color: #5f5f5f;
 	}
-}
-.footer__phone-number {
 }
 
 @media (max-width: 767px){
