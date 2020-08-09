@@ -78,4 +78,37 @@ $(document).ready(function () {
 		}
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
+	$('#choice__input-1, #choice__input-2').on('focus', function(e){
+		$(this).attr('placeholder', '');
+	});
+	$('#choice__input-1, #choice__input-2').on('blur', function(e){
+		$('#choice__input-1').attr('placeholder', 'Имя');
+		$('#choice__input-2').attr('placeholder', 'Email');
+	});
+	$('#choice__button').on('click', function(e){
+		if($('#choice__input-1').val() == '')
+		{
+			$('#choice__input-1').css('border', '1px solid red');
+		} else{
+			$('#choice__input-1').css('border', '1px solid #e3e3e3');
+			$('#choice__input-1').on('mouseenter', function(){
+				$(this).css('border', '1px solid #000000');
+			});
+			$('#choice__input-1').on('mouseleave', function(){
+				$(this).css('border', '1px solid #e3e3e3');
+			});
+		}
+		if($('#choice__input-2').val() == '')
+		{
+			$('#choice__input-2').css('border', '1px solid red');
+		} else{
+			$('#choice__input-2').css('border', '1px solid #e3e3e3');
+			$('#choice__input-2').on('mouseenter', function(){
+				$(this).css('border', '1px solid #000000');
+			});
+			$('#choice__input-2').on('mouseleave', function(){
+				$(this).css('border', '1px solid #e3e3e3');
+			});
+		}
+	});
 });
