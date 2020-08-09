@@ -142,9 +142,9 @@ $(document).ready(function () {
 		$('#popup__input-1').attr('placeholder', 'Имя');
 		$('#popup__input-2').attr('placeholder', 'Email');
 	});
-	$("body").on('click', '[href*="#"]', function (e) {
+	/* $("body").on('click', '[href*="#"]', function (e) {
 		var fixed_offset = 100;
 		$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
 		e.preventDefault();
-	});
+	}); */
 });

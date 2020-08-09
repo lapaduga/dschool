@@ -3541,10 +3541,18 @@ body.lock {
 	left: 0;
 	opacity: 0;
 	visibility: hidden;
+	z-index: 100;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.5s ease 0s;
 }
 .popup__request:target{
 	opacity: 1;
 	visibility: visible;
+}
+.popup__request:target .popup__content{
+	transform: translate(0px, 0%);
+	opacity: 1;
 }
 .popup__body {
 	min-height: 100%;
@@ -3569,8 +3577,16 @@ body.lock {
 	flex-direction: column;
 	flex: 1 1 1062px;
 	padding: 20px;
+	transition: all 0.5s ease 0s;
+	opacity: 0;
+	transform: translate(0px, -100%);
 }
-.popup__close {
+.popup__close-area {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
 .popup__close-cross {
 	position: absolute;
@@ -3652,4 +3668,93 @@ body.lock {
 	font-family: "Norms";
 	font-size: 14px;
 	line-height: 150%;
+}
+
+@media (max-width: 1080px){
+	.popup__inputs{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.popup__request-remark{
+		max-width: 298px;
+		position: relative;
+		top: 0;
+		left: 16px;
+	}
+}
+@media (max-width: 992px){
+	.popup__content {
+		align-items: flex-end;
+		padding-right: 100px;
+	}
+}
+@media (max-width: 800px){
+	.popup__image{
+		bottom: 10px;
+		left: 10px;
+		img{
+			max-width: 50%;
+		}
+	}
+	.popup__body{
+		padding: 20px;
+	}
+}
+@media (max-width: 700px){
+	.popup__content{
+		background: url("../img/img/popup/bg.svg") bottom left/40% no-repeat, #fff;
+		padding: 20px;
+	}
+	.popup__close-cross {
+		height: 50px;
+		width: 50px;
+		top: 10px;
+		right: 10px;
+		background: url("../img/img/popup/close-bg.svg") top right/contain no-repeat;
+	}
+}
+
+@media (max-width: 580px){
+	.popup__content {
+		background: url("../img/img/popup/bg.svg") bottom left/30% no-repeat, #fff;
+	}
+	.popup__image{
+		bottom: 10px;
+		left: 10px;
+		img{
+			max-width: 30%;
+		}
+	}
+}
+
+@media (max-width: 480px){
+	.popup__content{
+		height: 600px;
+		justify-content: flex-start;
+		align-items: center;
+		padding-top: 70px;
+	}
+	.popup__title{
+		text-align: center;
+	}
+	.popup__inputs{
+		input{
+			width: 250px;
+		}
+	}
+	.popup__request-remark{
+		max-width: 250px;
+		left: 16px;
+	}
+	.popup__unibutton{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 360px){
+	.popup__content{
+		width: 280px;
+	}
 }
