@@ -109,6 +109,30 @@ $(document).ready(function () {
 			});
 		}
 	});
+	$('#popup__unibutton').on('click', function (e) {
+		if ($('#popup__input-1').val() == '') {
+			$('#popup__input-1').css('border', '1px solid red');
+		} else {
+			$('#popup__input-1').css('border', '1px solid #e3e3e3');
+			$('#popup__input-1').on('mouseenter', function () {
+				$(this).css('border', '1px solid #000000');
+			});
+			$('#popup__input-1').on('mouseleave', function () {
+				$(this).css('border', '1px solid #e3e3e3');
+			});
+		}
+		if ($('#popup__input-2').val() == '') {
+			$('#popup__input-2').css('border', '1px solid red');
+		} else {
+			$('#popup__input-2').css('border', '1px solid #e3e3e3');
+			$('#popup__input-2').on('mouseenter', function () {
+				$(this).css('border', '1px solid #000000');
+			});
+			$('#popup__input-2').on('mouseleave', function () {
+				$(this).css('border', '1px solid #e3e3e3');
+			});
+		}
+	});
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixed_offset = 100;
 		$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);

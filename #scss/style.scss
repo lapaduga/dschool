@@ -3503,31 +3503,125 @@ body.lock {
 	font-weight: 800;
 	font-size: 20px;
 	line-height: 130%;
-	a{
+	a {
 		color: #5f5f5f;
 	}
 }
 
-@media (max-width: 767px){
-	.footer{
+@media (max-width: 767px) {
+	.footer {
 		height: 120px;
 	}
-	.footer__phone{
+	.footer__phone {
 		font-size: 14px;
 	}
 	.footer__logo {
-		img{
+		img {
 			max-width: 200px;
 		}
 	}
 }
-@media (max-width: 400px){
-	.footer{
+@media (max-width: 400px) {
+	.footer {
 		flex-direction: column-reverse;
 		justify-content: center;
 		height: 100px;
 	}
-	.footer__phone{
+	.footer__phone {
 		margin-bottom: 5px;
 	}
+}
+
+.popup__request {
+	margin-bottom: 120px;
+}
+.popup__body {
+}
+.popup__content {
+	position: relative;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+	box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.1);
+	border-radius: 50px;
+	max-width: 1062px;
+	min-height: 500px;
+	margin: 0 auto;
+	background: url("../img/img/popup/bg.svg") bottom left no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.popup__close {
+}
+.popup__close-cross {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 96px;
+	width: 96px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url("../img/img/popup/close-bg.svg") top right no-repeat;
+}
+.popup__image {
+	position: absolute;
+	bottom: -71px;
+	left: -96px;
+	img {
+		max-width: 100%;
+	}
+}
+.popup__title {
+	margin-bottom: 32px;
+}
+.popup__form {
+}
+.popup__inputs {
+	margin-bottom: 8px;
+	input {
+		margin: 10px 15px;
+		background: #ffffff;
+		border: 1px solid #e3e3e3;
+		border-radius: 170px;
+		width: 298px;
+		height: 51px;
+		padding-left: 30px;
+		font-family: "Norms";
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 130%;
+		color: #000000;
+		transition: all 0.3s ease 0s;
+	}
+	input::placeholder {
+		color: #000000;
+	}
+	input:hover {
+		transition: all 0.3s ease 0s;
+		border: 1px solid #000;
+	}
+}
+.popup__request-remark {
+	margin-bottom: 32px;
+	padding: 0 20px;
+	text-align: center;
+	a {
+		text-decoration: underline;
+		color: #000;
+	}
+}
+.popup__button {
+	text-align: center;
+}
+.popup__unibutton {
+	background: linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
+	transition: all 0.3s ease 0s;
+}
+.popup__unibutton:hover {
+	background: linear-gradient(90deg, #5d2cea 0%, #216cff 100%), linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
+	box-shadow: 0px 15px 35px rgba(5, 0, 255, 0.25);
+	transition: all 0.3s ease 0s;
 }
