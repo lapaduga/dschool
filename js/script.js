@@ -9,7 +9,7 @@ $(document).ready(function () {
 				document.getElementById("header__school-body").style.height = "125px";
 				document.getElementById("school-button").style.display = "inline-block";
 			}
-		} else{
+		} else {
 			document.getElementById("header__school-body").style.height = "50px";
 			document.getElementById("school-button").style.display = "none";
 		}
@@ -22,16 +22,16 @@ $(document).ready(function () {
 	$('.choice__slider, .about__slider-2').slick({
 		arrows: false,
 		adaptiveHeight: true,
-		slidesToShow:4,
-		easing:'ease',
+		slidesToShow: 4,
+		easing: 'ease',
 		autoplay: true,
-		touchThreshold:10,
+		touchThreshold: 10,
 		centerMode: true,
 		variableWidth: true,
-		responsive:[
+		responsive: [
 			{
 				breakpoint: 580,
-				settings:{
+				settings: {
 					slidesToShow: 1,
 					centerMode: false,
 					variableWidth: false
@@ -42,17 +42,17 @@ $(document).ready(function () {
 	$('.about__slider-1').slick({
 		arrows: false,
 		adaptiveHeight: true,
-		slidesToShow:4,
-		easing:'ease',
+		slidesToShow: 4,
+		easing: 'ease',
 		autoplay: true,
 		autoplaySpeed: 1500,
-		touchThreshold:10,
+		touchThreshold: 10,
 		centerMode: false,
 		variableWidth: true,
-		responsive:[
+		responsive: [
 			{
 				breakpoint: 580,
-				settings:{
+				settings: {
 					slidesToShow: 2,
 					centerMode: false,
 					variableWidth: false
@@ -64,51 +64,54 @@ $(document).ready(function () {
 		arrows: true,
 		dots: true,
 		adaptiveHeight: true,
-		slidesToShow:3,
-		easing:'ease',
-		touchThreshold:10,
+		slidesToShow: 3,
+		easing: 'ease',
+		touchThreshold: 10,
 		centerMode: true,
 		variableWidth: true,
 		appendArrows: $('.testimonials')
 	});
-	$('.structure__spoiler-head').click(function(event){
-		if($('.structure__spoilers').hasClass('one')){
+	$('.structure__spoiler-head').click(function (event) {
+		if ($('.structure__spoilers').hasClass('one')) {
 			$('.structure__spoiler-head').not($(this)).removeClass('active');
 			$('.structure__spoiler-body').not($(this).next()).slideUp('300');
 		}
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
-	$('#choice__input-1, #choice__input-2').on('focus', function(e){
+	$('#choice__input-1, #choice__input-2').on('focus', function (e) {
 		$(this).attr('placeholder', '');
 	});
-	$('#choice__input-1, #choice__input-2').on('blur', function(e){
+	$('#choice__input-1, #choice__input-2').on('blur', function (e) {
 		$('#choice__input-1').attr('placeholder', 'Имя');
 		$('#choice__input-2').attr('placeholder', 'Email');
 	});
-	$('#choice__button').on('click', function(e){
-		if($('#choice__input-1').val() == '')
-		{
+	$('#choice__button').on('click', function (e) {
+		if ($('#choice__input-1').val() == '') {
 			$('#choice__input-1').css('border', '1px solid red');
-		} else{
+		} else {
 			$('#choice__input-1').css('border', '1px solid #e3e3e3');
-			$('#choice__input-1').on('mouseenter', function(){
+			$('#choice__input-1').on('mouseenter', function () {
 				$(this).css('border', '1px solid #000000');
 			});
-			$('#choice__input-1').on('mouseleave', function(){
+			$('#choice__input-1').on('mouseleave', function () {
 				$(this).css('border', '1px solid #e3e3e3');
 			});
 		}
-		if($('#choice__input-2').val() == '')
-		{
+		if ($('#choice__input-2').val() == '') {
 			$('#choice__input-2').css('border', '1px solid red');
-		} else{
+		} else {
 			$('#choice__input-2').css('border', '1px solid #e3e3e3');
-			$('#choice__input-2').on('mouseenter', function(){
+			$('#choice__input-2').on('mouseenter', function () {
 				$(this).css('border', '1px solid #000000');
 			});
-			$('#choice__input-2').on('mouseleave', function(){
+			$('#choice__input-2').on('mouseleave', function () {
 				$(this).css('border', '1px solid #e3e3e3');
 			});
 		}
+	});
+	$("body").on('click', '[href*="#"]', function (e) {
+		var fixed_offset = 100;
+		$('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+		e.preventDefault();
 	});
 });
