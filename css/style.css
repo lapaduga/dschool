@@ -4932,17 +4932,15 @@ body.lock {
   }
 }
 
-#popup__thanx {
-  opacity: 1;
-  visibility: visible;
+/* #popup__thanx{
+	opacity: 1;
+	visibility: visible;
 }
 
-#popup__thanx .popup__content {
-  -webkit-transform: translate(0px, 0%);
-          transform: translate(0px, 0%);
-  opacity: 1;
-}
-
+#popup__thanx .popup__content{
+	transform: translate(0px, 0%);
+	opacity: 1;
+} */
 .popup__title-thx {
   margin-bottom: 16px;
 }
@@ -4991,5 +4989,98 @@ body.lock {
   }
   .popup__thanx-text {
     text-align: center;
+  }
+}
+
+#popup__about:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__about-body {
+  padding: 20px;
+}
+
+#popup__about:target .popup__content {
+  -webkit-transform: translate(0px, 0%);
+          transform: translate(0px, 0%);
+  opacity: 1;
+}
+
+.popup__about-content {
+  padding: 20px;
+  background: #fff;
+  max-width: 840px;
+}
+
+.popup__about-title {
+  margin-bottom: 32px;
+  margin-top: 50px;
+}
+
+.popup__about-list {
+  list-style: none;
+  margin-bottom: 60px;
+  max-width: 530px;
+  counter-reset: num;
+  padding: 0 20px 0 50px;
+}
+
+.popup__about-list li {
+  font-family: "Norms";
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.popup__about-list li:before {
+  content: counter(num) ". ";
+  counter-increment: num;
+  font-family: "Norms";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 150%;
+  background: -webkit-gradient(linear, left top, right top, from(#a22cea), to(#7000ff));
+  background: linear-gradient(90deg, #a22cea 0%, #7000ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 28px;
+  margin-left: -46px;
+}
+
+.popup__about-button {
+  margin-bottom: 63px;
+}
+
+@media (max-width: 992px) {
+  .popup__about-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup__about-content {
+    min-height: 740px;
+  }
+  .popup__about-list {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .popup__about-list li {
+    font-size: 16px;
+  }
+  .popup__about-list li:before {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popup__about-content {
+    min-height: 800px;
   }
 }
