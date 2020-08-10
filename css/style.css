@@ -4704,6 +4704,8 @@ body.lock {
 }
 
 .popup__close-cross {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   position: absolute;
   top: 0;
   right: 0;
@@ -4719,6 +4721,44 @@ body.lock {
       -ms-flex-pack: center;
           justify-content: center;
   background: url("../img/img/popup/close-bg.svg") top right no-repeat;
+}
+
+.popup__close-cross:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: url("../img/img/popup/blue-clode-bg.svg") top right no-repeat;
+}
+
+.popup__close-cross:hover .white-cross {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.popup__close-cross:hover .black-cross {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.black-cross {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+}
+
+.white-cross {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .popup__image {
@@ -4932,15 +4972,6 @@ body.lock {
   }
 }
 
-/* #popup__thanx{
-	opacity: 1;
-	visibility: visible;
-}
-
-#popup__thanx .popup__content{
-	transform: translate(0px, 0%);
-	opacity: 1;
-} */
 .popup__title-thx {
   margin-bottom: 16px;
 }

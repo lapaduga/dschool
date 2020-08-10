@@ -3589,6 +3589,7 @@ body.lock {
 	left: 0;
 }
 .popup__close-cross {
+	transition: all 0.3s ease 0s;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -3598,6 +3599,32 @@ body.lock {
 	align-items: center;
 	justify-content: center;
 	background: url("../img/img/popup/close-bg.svg") top right no-repeat;
+}
+.popup__close-cross:hover{
+	transition: all 0.3s ease 0s;
+	background: url("../img/img/popup/blue-clode-bg.svg") top right no-repeat;
+	.white-cross{
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.3s ease 0s;
+	}
+	.black-cross{
+		opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s ease 0s;
+	}
+}
+.black-cross{
+	opacity: 1;
+		visibility: visible;
+		transition: all 0.3s ease 0s;
+		transform: translate(50%);
+}
+.white-cross{
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease 0s;
+	transform: translate(-50%);
 }
 .popup__image {
 	position: absolute;
@@ -3758,16 +3785,6 @@ body.lock {
 		width: 280px;
 	}
 }
-
-/* #popup__thanx{
-	opacity: 1;
-	visibility: visible;
-}
-
-#popup__thanx .popup__content{
-	transform: translate(0px, 0%);
-	opacity: 1;
-} */
 .popup__title-thx {
 	margin-bottom: 16px;
 }
