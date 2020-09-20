@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	window.onscroll = function () { scrollFunction() };
 	function scrollFunction() {
-		if (document.documentElement.clientWidth > 900) {
+		if (document.documentElement.clientWidth > 767) {
 			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 				document.getElementById("header__school-body").style.height = "50px";
 				document.getElementById("school-button").style.display = "none";
